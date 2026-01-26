@@ -19,14 +19,11 @@
       <body>
         <section id="iz9j" class="flexrow">
    <div id="iegv" class="flexcolumn">
-      <span id="i1rkd"><span id="iirj"><b id="iket">Problem Title</b></span></span>
-      <section id="i1rs8" class="flexrow">
-         <div id="problem_statement" class="CTATTextArea"></div>
-</section>
-<span id="izm91"></span>
-<span id="icywy"><b id="ibszz">Network Map Diagram</b></span></span>
-<section id="inhkw" class="flexrow">
-   <div id="network_map" data-ctat-image-default="" data-ctat-enabled="true" data-ctat-tutor="false" class="CTATImageButton"></div>
+      <span id="i1rkd"><b id="problem_title">Problem Title</b></span>
+      <div id="problem_statement" class="CTATTextArea"></div>
+   <span id="icywy"><b id="ibszz">Network Map Diagram</b> (Click to zoom)</span>
+   <section id="inhkw" class="flexrow">
+      <div id="network_map" data-ctat-image-default="" data-ctat-enabled="true" data-ctat-tutor="false" class="CTATImageButton"></div>
 </section>
 <section id="i80r" class="HintWidgetRow">
    <div id="i6og" class="HintWidgetButtons">
@@ -37,184 +34,123 @@
 </section>
 </div>
 <div id="isk4" class="flexcolumn">
-   <span id="ikcm5"><span id="i0j8x"><b id="ii1ek">Task 1: Subnet Details</b></span></span>
+   <span id="ikcm5"><b id="ii1ek">Task 1: Subnet Details</b></span>
    <div id="task_1_statement" class="CTATTextArea"></div>
-<section id="izo38" class="flexrow">
-   <div id="iw8br" class="flexcolumn">
-      <section id="iidxi" class="flexrow">
-         <span id="i33ol"><span id="iizqt">IP Address:</span></span>
-      </section>
-   <section id="ipmbf" class="flexrow">
-      <span id="iqoa3"><span id="it3ui">Prefix Length:</span></span>
-   </section>
-   <section id="i1ede" class="flexrow">
-      <span id="iqill"><span id="i15kp">Subnet Mask:</span></span>
-   </section>
-   <section id="i81jp" class="flexrow">
-      <span id="isgsp"><span id="i5gy7">Network IP Address:</span></span>
-   </section>
-   <section id="iqlzz" class="flexrow">
-      <span id="i1256"><span id="ibwid">Last / Broadcast IP Address:</span></span>
-   </section>
-   <section id="iofqh" class="flexrow">
-      <span id="i76ui"><span id="is0fv">Usable IP address range:</span></span>
-   </section>
-</div>
-<div id="icznb" class="flexcolumn">
-   <section id="igboh" class="flexrow">
-      <div id="ip_input_decimal" placeholder="enter decimal here..." class="CTATTextInput"></div>
-   <div id="ip_TPA_binary" placeholder="binary conversion (autofill)" data-ctat-enabled="false" class="CTATTextInput"></div>
-</section>
-<section id="idvss" class="flexrow">
-   <div id="prefix_length_input" class="CTATTextInput"></div>
-</section>
-<section id="isia3" class="flexrow">
-   <div id="subnet_mask_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
-   <div id="subnet_mask_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
-</section>
-<section id="ieo4g" class="flexrow">
-   <div id="network_ip_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
-   <div id="network_ip_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
-</section>
-<section id="i5vgf" class="flexrow">
-   <div id="broadcast_ip_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
-   <div id="broadcast_ip_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
-</section>
-<section id="ijx44" class="flexrow">
-   <div id="first_usable_ip_input_binary" class="CTATTextInput"></div>
-   <span id="irrm5"><span id="iusg9f">to</span></span>
-   <div id="last_usable_ip_input_binary" class="CTATTextInput"></div>
-</section>
-</div>
-</section>
-<span id="i7sk3">
-   <span id="il4bnm"><b id="iahwrf">Task 2: IP Address Verification</b></span></span>
-   <span id="ipifx">
-      <span id="i60vif">During setup, you notice various devices with IP addresses that might not all be within the correct range. Verify if each of the following IP addresses is a usable address within this subnet:
-      </span></span>
-<section id="i4gls" class="flexrow">
-   <div id="i7npg" class="flexcolumn">
-      <section id="i9252" class="flexrow">
-         <div id="i9o8k" class="CTATTextField">
-            Verification (1)                                                                                                                                                                                                      
-         </div>
-</section>
-<section id="ihlzb" class="flexrow">
-   <div id="icdqm" class="CTATTextField">
-      Verification (2)                                                                  
+<section id="ip_address_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">IP Address:</span>
    </div>
-</section>
+   <div class="input-main-column">
+      <div id="ip_input_decimal" placeholder="enter decimal here..." class="CTATTextInput"></div>
 </div>
-<div id="inbpm" class="flexcolumn">
-   <section id="il3mj" class="flexrow">
+   <div class="input-secondary-column">
+      <div id="ip_TPA_binary" placeholder="binary conversion (autofill)" data-ctat-enabled="false" class="CTATTextInput"></div>
+</div>
+</section>
+<section id="prefix_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Prefix Length:</span>
+   </div>
+   <div class="input-main-column">
+      <div id="prefix_length_input" placeholder="enter decimal here..." class="CTATTextInput"></div>
+</div>
+   <div class="input-secondary-column"></div>
+</section>
+<section id="subnet_mask_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Subnet Mask:</span>
+   </div>
+   <div class="input-main-column">
+      <div id="subnet_mask_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
+</div>
+   <div class="input-secondary-column">
+      <div id="subnet_mask_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
+</div>
+</section>
+<section id="network_ip_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Network IP Address:</span>
+   </div>
+   <div class="input-main-column">
+      <div id="network_ip_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
+</div>
+   <div class="input-secondary-column">
+      <div id="network_ip_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
+</div>
+</section>
+<section id="broadcast_ip_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Broadcast IP Address:</span>
+   </div>
+   <div class="input-main-column">
+      <div id="broadcast_ip_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
+</div>
+   <div class="input-secondary-column">
+      <div id="broadcast_ip_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
+</div>
+</section>
+<section id="range_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Usable IP address range:</span>
+   </div>
+   <div class="range-container">
+      <div id="first_usable_ip_input_binary" class="CTATTextInput"></div>
+   <span class="range-separator">to</span>
+   <div id="last_usable_ip_input_binary" class="CTATTextInput"></div>
+</div>
+</section>
+<span class="task-header"><b>Task 2: IP Address Verification</b></span>
+<div class="task-description">
+   During setup, you notice various devices with IP addresses that might not all be within the correct range. Verify if each of the following IP addresses is a usable address within this subnet:
+</div>
+<section id="verification_1_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Verification (1)</span>
+   </div>
+   <div class="input-main-column">
       <div id="first_verification_ip" class="CTATTextArea"></div>
-   <div id="first_verification_option" data-ctat-labels="options, True, False" class="CTATComboBox"></div>
-</section>
-<section id="i9ba3" class="flexrow">
-   <div id="second_verification_ip" class="CTATTextArea"></div>
-   <div id="second_verification_option" data-ctat-labels=" options, True, False" class="CTATComboBox"></div>
-</section>
+</div>
+   <div class="input-secondary-column">
+      <div id="first_verification_option" data-ctat-labels="options, True, False" class="CTATComboBox"></div>
 </div>
 </section>
-<span id="ih69i">
-   <span id="ixb6tj"><b id="ify1ue">Task 3: Default Gateway</b></span></span>
-   <span id="i02ec">
-      <span id="if4muv">Based on the network map provided, identify the default gateway for internal devices on this floor to ensure consistent routing.</span></span>
-<section id="ipsnk" class="flexrow">
-   <div id="i9pio" class="flexcolumn">
-      <div id="iveic" class="CTATTextField">
-         <span id="ijzzjh">Default Gateway:</span>
-      </div>
+<section id="verification_2_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Verification (2)</span>
+   </div>
+   <div class="input-main-column">
+      <div id="second_verification_ip" class="CTATTextArea"></div>
 </div>
-   <div id="ikb7j" class="flexcolumn">
+   <div class="input-secondary-column">
+      <div id="second_verification_option" data-ctat-labels="options, True, False" class="CTATComboBox"></div>
+</div>
+</section>
+<span class="task-header"><b>Task 3: Default Gateway</b></span>
+<div class="task-description">
+   Based on the network map provided, identify the default gateway for internal devices on this floor to ensure consistent routing.
+</div>
+<section id="gateway_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Default Gateway:</span>
+   </div>
+   <div class="input-main-column">
       <div id="default_gateway_input" class="CTATTextInput"></div>
 </div>
+   <div class="input-secondary-column"></div>
 </section>
-<span id="io3fl">
-   <span id="i1slxr"><b id="ii1txa">Task 4: CIDR Notation</b></span>
-</span>
+<span class="task-header"><b>Task 4: CIDR Notation</b></span>
 <div id="cidr_notation_problem_statement" class="CTATTextArea"></div>
-<section id="izpyc" class="flexrow">
-   <div id="i8gq1" class="flexcolumn">
-      <div id="iyq19" class="CTATTextField">
-         <span id="idldwe">CIDR Notation:</span>
-      </div>
-</div>
-   <div id="izvbu" class="flexcolumn">
+<section id="cidr_row" class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">CIDR Notation:</span>
+   </div>
+   <div class="input-main-column">
       <div id="igk9l" class="CTATTextInput"></div>
 </div>
+   <div class="input-secondary-column"></div>
 </section>
 </div>
 </section>
-<script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
-<script>
-  const attachZoomToCTATPopup = () => {
-    const observer = new MutationObserver(() => {
-      const modalImage = document.querySelector("#networkMapImageHolder img");
-      if (modalImage && !modalImage.dataset.zoomInitialized) {
-        modalImage.dataset.zoomInitialized = "true";
-        const instructionText = document.querySelector(".networkMapDialogBox");
-        if (instructionText) {
-          instructionText.innerText = "You can zoom and drag the map. Use the 🔍 buttons to zoom in/out, and click to drag the image.";
-        }
-
-        const panzoom = Panzoom(modalImage, {
-          maxScale: 3,
-          minScale: 1,
-          contain: 'outside',
-        });
-
-        modalImage.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
-
-        // Optional: Add a zoom cursor for better UX
-        modalImage.style.cursor = 'zoom-in';
-        modalImage.addEventListener('mousedown', () => {
-          modalImage.style.cursor = 'grab';
-        });
-        modalImage.addEventListener('mouseup', () => {
-          modalImage.style.cursor = 'zoom-in';
-        });
-
-        // --- Create Zoom Buttons ---
-        const buttonContainer = document.createElement('div');
-        buttonContainer.style.position = 'absolute';
-        buttonContainer.style.top = '10px';
-        buttonContainer.style.right = '10px';
-        buttonContainer.style.zIndex = '999';
-        buttonContainer.style.display = 'flex';
-        buttonContainer.style.flexDirection = 'column';
-        buttonContainer.style.gap = '5px';
-      
-        const zoomInBtn = document.createElement('button');
-        zoomInBtn.innerText = '🔍+';
-        zoomInBtn.style.padding = '5px';
-        zoomInBtn.style.fontSize = '18px';
-        zoomInBtn.style.borderRadius = '5px';
-      
-        const zoomOutBtn = document.createElement('button');
-        zoomOutBtn.innerText = '🔍−';
-        zoomOutBtn.style.padding = '5px';
-        zoomOutBtn.style.fontSize = '18px';
-        zoomOutBtn.style.borderRadius = '5px';
-      
-        zoomInBtn.addEventListener('click', () => panzoom.zoomIn());
-        zoomOutBtn.addEventListener('click', () => panzoom.zoomOut());
-      
-        buttonContainer.appendChild(zoomInBtn);
-        buttonContainer.appendChild(zoomOutBtn);
-      
-        modalImage.parentElement.style.position = 'relative'; // ensure it's positioned
-        modalImage.parentElement.appendChild(buttonContainer);
-      }
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-  };
-
-  window.addEventListener('load', attachZoomToCTATPopup);
-
-  
-</script>
       </body>
     </html>
   
