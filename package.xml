@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package label="subnetting_ccac_demo" description="subnetting_ccac_demo" save_state="true">
+  <Problems>
+    <Problem name="Q1" label="Q1" tutor_flag="tutor" model_file="Q1.nools" student_interface="subnetting_interface.html">
+      <Skills>
+      </Skills>
+    </Problem>
+    <Problem name="Q2" label="Q2" tutor_flag="tutor" model_file="Q2.nools" student_interface="subnetting_interface.html">
+      <Skills>
+      </Skills>
+    </Problem>
+    <Problem name="Q3" label="Q3" tutor_flag="tutor" model_file="Q3.nools" student_interface="subnetting_interface.html">
+      <Skills>
+      </Skills>
+    </Problem>
+    <Problem name="Q4" label="Q4" tutor_flag="tutor" model_file="Q4.nools" student_interface="subnetting_interface.html">
+      <Skills>
+      </Skills>
+    </Problem>
+  </Problems>
+  <ProblemSets>
+    <ProblemSet name="CCAC DEMO" label="Ccac demo" status="active" image_height="0" filler_height="0" team_size="1" selection_algorithm="sequential" max_count="1000" max_repeat="1" initial_sequence="0">
+      <Problems>
+        <Problem name="Q1" position="1" role="0"/>
+        <Problem name="Q2" position="2" role="0"/>
+        <Problem name="Q3" position="3" role="0"/>
+        <Problem name="Q4" position="4" role="0"/>
+      </Problems>
+      <Skills>
+      </Skills>
+      <Categories>
+        <Collection name="general" label="Released Problem Sets" description="Released Problem Sets"/>
+        <Standard name="CommonCore" label="Common Core Standards" description="Common Core Standards" standard_level="standard"/>
+        <Standard name="NCTM" label="NCTM Curriculum Focal Points" description="NCTM Curriculum Focal Points" standard_level="standard"/>
+        <Standard name="PA" label="PA Assessment Anchors" description="PA Assessment Anchors" standard_level="standard"/>
+        <Standard name="Student" label="Problem Set Categories" description="Student Standards" standard_level="standard"/>
+      </Categories>
+    </ProblemSet>
+  </ProblemSets>
+  <Assets>
+    <Asset name="productionrules.brd" path="CognitiveModel"/>
+    <Asset name="productionrules.nools" path="CognitiveModel"/>
+    <Asset name="Q1.brd" path="CognitiveModel"/>
+    <Asset name="Q1.nools" path="CognitiveModel"/>
+    <Asset name="Q2.brd" path="CognitiveModel"/>
+    <Asset name="Q2.nools" path="CognitiveModel"/>
+    <Asset name="Q3.brd" path="CognitiveModel"/>
+    <Asset name="Q3.nools" path="CognitiveModel"/>
+    <Asset name="Q4.brd" path="CognitiveModel"/>
+    <Asset name="Q4.nools" path="CognitiveModel"/>
+    <Asset name="types.brd" path="CognitiveModel"/>
+    <Asset name="types.nools" path="CognitiveModel"/>
+    <Asset name="cisco.brd" path="FinalBRDs"/>
+    <Asset name="Q1.brd" path="FinalBRDs"/>
+    <Asset name="Q2.brd" path="FinalBRDs"/>
+    <Asset name="Q3.brd" path="FinalBRDs"/>
+    <Asset name="Q4.brd" path="FinalBRDs"/>
+    <Asset name="cisco.html" path="HTML"/>
+    <Asset name="subnetting_interface.html" path="HTML"/>
+    <Asset name="binary_cheat.png" path="HTML/Assets"/>
+    <Asset name="cisco-styles.css" path="HTML/Assets"/>
+    <Asset name="networkmap1.png" path="HTML/Assets"/>
+    <Asset name="networkmap2.png" path="HTML/Assets"/>
+    <Asset name="networkmap3.png" path="HTML/Assets"/>
+    <Asset name="networkmap4.png" path="HTML/Assets"/>
+    <Asset name="P1_Broadcast.png" path="HTML/Assets"/>
+    <Asset name="P1_Network.png" path="HTML/Assets"/>
+    <Asset name="P1_SubnetMask.png" path="HTML/Assets"/>
+    <Asset name="P2_Broadcast.png" path="HTML/Assets"/>
+    <Asset name="P2_Network.png" path="HTML/Assets"/>
+    <Asset name="P2_SubnetMask.png" path="HTML/Assets"/>
+    <Asset name="P3_Broadcast.png" path="HTML/Assets"/>
+    <Asset name="P3_Network.png" path="HTML/Assets"/>
+    <Asset name="P3_SubnetMask.png" path="HTML/Assets"/>
+    <Asset name="P4_Broadcast.png" path="HTML/Assets"/>
+    <Asset name="P4_Network.png" path="HTML/Assets"/>
+    <Asset name="P4_SubnetMask.png" path="HTML/Assets"/>
+    <Asset name="subnetting_interface-styles.css" path="HTML/Assets"/>
+  </Assets>
+</Package>

@@ -1,0 +1,2 @@
+Problem Name	%(startStateNodeName)%	%(pound_input)%	%(ounce_input)%	%(convert_to_dropdown_lb)%	%(weight_midstep_input)%	%(convert_to_dropdown_oz)%
+ferret_and_telazol	NA	1	10	(to lb)	"fmtDecimal(algEval(pound_input + ounce_input * 0.0625),3)"	(to lb)

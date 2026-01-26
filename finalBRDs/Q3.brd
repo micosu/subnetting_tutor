@@ -1,0 +1,2007 @@
+<?xml version="1.0" standalone="yes"?>
+<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="false" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" confirmDone="false" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
+    <startNodeMessages>
+        <message>            <verb>NotePropertySet</verb>            <properties>                <MessageType>StartProblem</MessageType>                <ProblemName>empty</ProblemName>            </properties>        </message>
+        <message>            <verb>NotePropertySet</verb>            <properties>                <MessageType>StartStateEnd</MessageType>            </properties>        </message>
+    </startNodeMessages>
+    <node locked="false" doneState="false">
+        <text>empty</text>
+        <uniqueID>1</uniqueID>
+        <dimension>
+            <x>217</x>
+            <y>25</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state2</text>
+        <uniqueID>2</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>25</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state3</text>
+        <uniqueID>3</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>185</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state4</text>
+        <uniqueID>4</uniqueID>
+        <dimension>
+            <x>217</x>
+            <y>185</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state5</text>
+        <uniqueID>5</uniqueID>
+        <dimension>
+            <x>217</x>
+            <y>345</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state6</text>
+        <uniqueID>6</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>345</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state7</text>
+        <uniqueID>7</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>505</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state8</text>
+        <uniqueID>8</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>655</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state9</text>
+        <uniqueID>9</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>805</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state10</text>
+        <uniqueID>10</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>955</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state11</text>
+        <uniqueID>11</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>1105</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state12</text>
+        <uniqueID>12</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>1255</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state13</text>
+        <uniqueID>13</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>1405</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state14</text>
+        <uniqueID>14</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>1555</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state15</text>
+        <uniqueID>15</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>1705</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state16</text>
+        <uniqueID>16</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>1855</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state17</text>
+        <uniqueID>17</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>2005</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state18</text>
+        <uniqueID>18</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>2155</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state19</text>
+        <uniqueID>19</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>2305</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state20</text>
+        <uniqueID>20</uniqueID>
+        <dimension>
+            <x>-109</x>
+            <y>2455</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state21</text>
+        <uniqueID>21</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>2605</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state22</text>
+        <uniqueID>22</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>2755</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state23</text>
+        <uniqueID>23</uniqueID>
+        <dimension>
+            <x>-83</x>
+            <y>2905</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state24</text>
+        <uniqueID>24</uniqueID>
+        <dimension>
+            <x>414</x>
+            <y>535</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state25</text>
+        <uniqueID>25</uniqueID>
+        <dimension>
+            <x>416</x>
+            <y>641</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state26</text>
+        <uniqueID>26</uniqueID>
+        <dimension>
+            <x>397</x>
+            <y>809</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state27</text>
+        <uniqueID>27</uniqueID>
+        <dimension>
+            <x>388</x>
+            <y>911</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state28</text>
+        <uniqueID>28</uniqueID>
+        <dimension>
+            <x>594</x>
+            <y>1111</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state29</text>
+        <uniqueID>29</uniqueID>
+        <dimension>
+            <x>570</x>
+            <y>1268</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state30</text>
+        <uniqueID>30</uniqueID>
+        <dimension>
+            <x>534</x>
+            <y>1425</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state31</text>
+        <uniqueID>31</uniqueID>
+        <dimension>
+            <x>547</x>
+            <y>1572</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state32</text>
+        <uniqueID>32</uniqueID>
+        <dimension>
+            <x>483</x>
+            <y>1903</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state33</text>
+        <uniqueID>33</uniqueID>
+        <dimension>
+            <x>552</x>
+            <y>2155</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state34</text>
+        <uniqueID>34</uniqueID>
+        <dimension>
+            <x>514</x>
+            <y>2245</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state35</text>
+        <uniqueID>35</uniqueID>
+        <dimension>
+            <x>496</x>
+            <y>2421</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state36</text>
+        <uniqueID>36</uniqueID>
+        <dimension>
+            <x>537</x>
+            <y>2744</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state37</text>
+        <uniqueID>37</uniqueID>
+        <dimension>
+            <x>522</x>
+            <y>2611</y>
+        </dimension>
+    </node>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>1</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>da7d6bc8-66d2-e59c-e7c9-1867683b0eab</transaction_id><Selection><value>network_map</value></Selection><Action><value>setImage</value></Action><Input><value><![CDATA[Assets/networkmap2.png]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[network_map]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[setImage]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[Assets/networkmap3.png]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>1</sourceID>
+        <destID>2</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>2</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>98369d74-b1c8-9d40-167d-4f81a270e4ac</transaction_id><Selection><value>problem_statement</value></Selection><Action><value>UpdateTextArea</value></Action><Input><value><![CDATA[[PRACTICE.HINT AVAILABLE! HIT "DONE" BUTTON WHEN FINISH!] An educational institution, Innovate Academy, has recently expanded and assigned your team to configure a secure subnet for its research department. The network for this subnet is configured as 10.2.0.0/13. Ensure that the network is set up to avoid address conflicts.]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "Your company TechHorizon Inc. has expanded to a new floor, adding numerous workstations and IoT devices to the internal network. As part of the IT team, your task is to ensure the expanded network, using subnet 172.16.0.0/12, is correctly configured and free from IP conflicts before connecting new devices." in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[problem_statement]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextArea]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[[PRACTICE.HINT AVAILABLE! HIT "DONE" BUTTON WHEN FINISH!] An educational institution, Innovate Academy, has recently expanded and assigned your team to configure a secure subnet for its research department. The network for this subnet is configured as 10.2.0.0/13. Ensure that the network is set up to avoid address conflicts.]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>2</sourceID>
+        <destID>3</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>3</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>b5aa3ddb-2596-2f0c-bad6-88bc61e5fd0c</transaction_id><Selection><value>task_1_statement</value></Selection><Action><value>UpdateTextArea</value></Action><Input><value><![CDATA[Based on the given network configuration of 10.2.0.0/13]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "Based on the given network configuration of 172.16.0.0/12" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[task_1_statement]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextArea]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[Based on the given network configuration of 10.2.0.0/13]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>3</sourceID>
+        <destID>4</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>4</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>5ce8fcae-b3f2-e207-1cad-cdf272581df2</transaction_id><Selection><value>cidr_notation_problem_statement</value></Selection><Action><value>UpdateTextArea</value></Action><Input><value><![CDATA[Find the smallest subnet within 10.2.0.0/13 that can provide at least 500 usable IP addresses. Write this subnet in CIDR notation.]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "Within the 172.16.0.0/12 network, what is the first subnet that provides at least 100 usable IP addresses? Write the CIDR notation for this subnet." in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[cidr_notation_problem_statement]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextArea]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[Find the smallest subnet within 10.2.0.0/13 that can provide at least 500 usable IP addresses. Write this subnet in CIDR notation.]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>4</sourceID>
+        <destID>5</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>5</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>2b2ade01-c355-846c-23bd-dd59c0baa8c1</transaction_id><Selection><value>first_verification_ip</value></Selection><Action><value>UpdateTextArea</value></Action><Input><value><![CDATA[10.2.0.1 ]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "172.17.0.1" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[first_verification_ip]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextArea]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.1 ]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>5</sourceID>
+        <destID>6</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>6</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>2922225d-848a-94e3-543b-716b8278f992</transaction_id><Selection><value>second_verification_ip</value></Selection><Action><value>UpdateTextArea</value></Action><Input><value><![CDATA[10.7.255.254 ]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "172.31.255.255" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[second_verification_ip]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextArea]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.7.255.254 ]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor (unevaluated)</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>6</sourceID>
+        <destID>7</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>7</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>ffe890b8-79ed-4fb2-108a-c8e9d72e60af</transaction_id><Selection><value>ip_input_decimal</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.0]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[The IP address is part of the network configuration provided (10.2.0.0/13)]]></hintMessage>
+            <hintMessage><![CDATA[Look at the value before the '/' in 10.2.0.0/13. This is the network's IP address.]]></hintMessage>
+            <hintMessage><![CDATA[Please enter "10.2.0.0"]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ip_input_decimal]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.0]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>7</sourceID>
+        <destID>8</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>8</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>f42d406b-5064-59c2-5e21-dd8e0666b7d1</transaction_id><Selection><value>ip_TPA_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[00001010.00000010.00000000.00000000]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "10101100.00010000.00000000.00000000" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ip_TPA_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExpressionMatcher</matcherType>
+                        <matcherParameter name="InputExpression"><![CDATA[ip_input_decimal.split('.').map(octet => (+octet).toString(2).padStart(8, '0')).join('.')]]></matcherParameter>
+                        <matcherParameter name="relation"><![CDATA[=]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>8</sourceID>
+        <destID>9</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>9</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>00951af2-8f4b-0b23-4048-1c4aa723ff55</transaction_id><Selection><value>prefix_length_input</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[13]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[The prefix length shows how many bits are allocated to the network in 10.2.0.0/13]]></hintMessage>
+            <hintMessage><![CDATA[Look at the value after the '/' in 10.2.0.0/13. That’s the prefix length]]></hintMessage>
+            <hintMessage><![CDATA[Please enter "13"]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[prefix_length_input]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[13]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>9</sourceID>
+        <destID>10</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>10</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>1fa924b3-4ca8-41f4-edd2-ba02d3b40fef</transaction_id><Selection><value>subnet_mask_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[11111111.11111000.00000000.00000000]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[The prefix length determines the subnet mask, showing which bits are for the network and which are for hosts.]]></hintMessage>
+            <hintMessage><![CDATA[With a prefix length of 13, write 13 ones, then fill the rest with zeros to make 32 bits.]]></hintMessage>
+            <hintMessage><![CDATA[<img src="Assets/P3_SubnetMask.png"/ style="object-fit: contain; width:420px;height:200px">]]></hintMessage>
+            <hintMessage><![CDATA[Please enter "11111111.11111000.00000000.00000000" (13 ones and 19 zeros for 32 bits; there are 8 bits in each octet).]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[subnet_mask_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[11111111.11111000.00000000.00000000]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>10</sourceID>
+        <destID>11</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>11</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>b1de4f6a-d08a-f197-bad2-67dd8576dc35</transaction_id><Selection><value>subnet_mask_TPA_decimal</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[255.248.0.0]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "255.240.0.0" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[subnet_mask_TPA_decimal]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExpressionMatcher</matcherType>
+                        <matcherParameter name="InputExpression"><![CDATA[subnet_mask_input_binary.split('.').map(octet => parseInt(octet, 2)).join('.')]]></matcherParameter>
+                        <matcherParameter name="relation"><![CDATA[=]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>11</sourceID>
+        <destID>12</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>12</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>1eea3f00-8f17-fa21-fd30-d9a06a261a59</transaction_id><Selection><value>network_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[00001010.00000000.00000000.00000000]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Network IP address is the first IP address in an IP subnet]]></hintMessage>
+            <hintMessage><![CDATA[Start by identifying the number of host bits (HINT: 32-<%=prefix_length_input%>), and change all the host bits to 0 to get the network IP address]]></hintMessage>
+            <hintMessage><![CDATA[<img src="Assets/P3_Network.png"/ style="object-fit: contain; width:420px;height:200px">]]></hintMessage>
+            <hintMessage><![CDATA[Please enter "00001010.00000000.00000000.00000000"]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[network_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[00001010.00000000.00000000.00000000]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>12</sourceID>
+        <destID>13</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>13</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>44257cbc-2ab0-8ea6-7932-a103a50b408d</transaction_id><Selection><value>network_ip_TPA_decimal</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.0]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "172.16.0.0" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[network_ip_TPA_decimal]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExpressionMatcher</matcherType>
+                        <matcherParameter name="InputExpression"><![CDATA[network_ip_input_binary.split('.').map(octet => parseInt(octet, 2)).join('.')]]></matcherParameter>
+                        <matcherParameter name="relation"><![CDATA[=]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>13</sourceID>
+        <destID>14</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>14</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>c84edc9b-954c-7113-6ea4-83b7257aff16</transaction_id><Selection><value>broadcast_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[00001010.00000111.11111111.11111111]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[The broadcast address is the last IP address in the network range. ]]></hintMessage>
+            <hintMessage><![CDATA[Start by identifying the number of host bits (HINT 32-<%=prefix_length_input%>), and change the host bits to 1 to get the broadcast IP address. ]]></hintMessage>
+            <hintMessage><![CDATA[<img src="Assets/P3_Broadcast.png"/ style="object-fit: contain; width:420px;height:200px">]]></hintMessage>
+            <hintMessage><![CDATA[Please enter "00001010.00000111.11111111.11111111"]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[broadcast_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[00001010.00000111.11111111.11111111]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>14</sourceID>
+        <destID>15</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>15</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>d4a3fc59-0217-c60c-1092-50a015f452f2</transaction_id><Selection><value>broadcast_ip_TPA_decimal</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.7.255.255]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "172.31.255.255" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[broadcast_ip_TPA_decimal]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExpressionMatcher</matcherType>
+                        <matcherParameter name="InputExpression"><![CDATA[broadcast_ip_input_binary.split('.').map(octet => parseInt(octet, 2)).join('.')]]></matcherParameter>
+                        <matcherParameter name="relation"><![CDATA[=]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Tutor</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>15</sourceID>
+        <destID>16</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>16</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>742add9e-78df-be48-32aa-080ab7381b1e</transaction_id><Selection><value>first_usable_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.0.0.1]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[The first usable IP address is the first address available for assignment to a device, following the network address.]]></hintMessage>
+            <hintMessage><![CDATA[Based on the the network address (in decimal) 10.0.0.0 add 1.]]></hintMessage>
+            <hintMessage><![CDATA[please enter: “10.0.0.1”]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[first_usable_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.0.0.1]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>16</sourceID>
+        <destID>17</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>17</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>d6df3f9d-b460-8044-cc25-de12d7dd59cc</transaction_id><Selection><value>last_usable_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.7.255.254]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[The last usable IP address is the highest IP address in the network range that can be assigned to a device, excluding the broadcast address.]]></hintMessage>
+            <hintMessage><![CDATA[Based on the the broadcast address (in decimal) 10.7.255.255, minus 1.]]></hintMessage>
+            <hintMessage><![CDATA[please enter "10.7.255.254"]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[last_usable_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.7.255.254]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>17</sourceID>
+        <destID>18</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>18</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>72e02e80-8f86-dc90-a820-7dc7806077dd</transaction_id><Selection><value>first_verification_option</value></Selection><Action><value>UpdateComboBox</value></Action><Input><value><![CDATA[ True]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[A usable IP address falls within the usable range of the subnet.]]></hintMessage>
+            <hintMessage><![CDATA[Check if <%=first_verification_ip%> falls within the usable range <%=first_usable_ip_input_binary%> to <%=last_usable_ip_input_binary%> .]]></hintMessage>
+            <hintMessage><![CDATA[Please select "True"]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[first_verification_option]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateComboBox]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ True]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>18</sourceID>
+        <destID>19</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>19</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>4afce808-2d2d-32d0-51ca-a1e89f85cbc2</transaction_id><Selection><value>second_verification_option</value></Selection><Action><value>UpdateComboBox</value></Action><Input><value><![CDATA[True]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[A usable IP address falls within the usable range of the subnet.]]></hintMessage>
+            <hintMessage><![CDATA[Check if <%=second_verification_ip%> falls within the usable range <%=first_usable_ip_input_binary%> to <%=last_usable_ip_input_binary%> .]]></hintMessage>
+            <hintMessage><![CDATA[Please select "True"]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[second_verification_option]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateComboBox]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[True]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>19</sourceID>
+        <destID>20</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>20</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>24123b08-312f-113b-cf8f-e780623da572</transaction_id><Selection><value>default_gateway_input</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.3]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[The default gateway is the device that allows traffic from your local network to reach other networks. Think of it as the network's exit point.]]></hintMessage>
+            <hintMessage><![CDATA[Look at the network map. Which device is responsible for letting traffic leave the internal network? Identify this exit point.]]></hintMessage>
+            <hintMessage><![CDATA[The default gateway IP is 10.2.0.3 This IP is assigned to the internal side of the firewall, which acts as the exit point for the internal network. ]]></hintMessage>
+            <hintMessage><![CDATA[Please enter "10.2.0.3 ". See it is in the internal facing side of the firewall (the exit point device for traffic to leave the internal network)]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[default_gateway_input]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.3]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>20</sourceID>
+        <destID>21</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>21</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>f97e6581-d867-b1c4-375d-0e40668ed512</transaction_id><Selection><value>igk9l</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.0/23]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Step 1: Find how many IP addresses are required.
+Step 2: Figure out how many host bits you need - Look for the smallest power of 2 that can cover needed IP addresses!
+Step 3: Calculate the prefix length.
+Step 4: Combine the IP address & the prefix length in CIDR notation]]></hintMessage>
+            <hintMessage><![CDATA[<img src="Assets/binary_cheat.png"/ style="object-fit: contain; width:420px;height:200px">]]></hintMessage>
+            <hintMessage><![CDATA[You need 500 usable IPs, plus 2 extra for the network address and broadcast address.
+So total IPs = 500 + 2 = 502.
+2^9=512 (this is greater than 202, so 8 host bits are enough).
+Prefix Length = 32 - 9 = 23]]></hintMessage>
+            <hintMessage><![CDATA[Please enter "10.2.0.0/23" It is the IP address / prefix length that we just got!]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[igk9l]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.0/23]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>21</sourceID>
+        <destID>22</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>22</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>e6781860-70a1-5f70-9129-07a3b17abb9a</transaction_id><Selection><value>done</value></Selection><Action><value>ButtonPressed</value></Action><Input><value><![CDATA[-1]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[done]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ButtonPressed]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[-1]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>22</sourceID>
+        <destID>23</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>23</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>1f57b2f9-a874-7c49-e8ef-fcfe73a45cc9</transaction_id><Selection><value>ip_input_decimal</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.0/13]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The prefix (/13) isn’t part of the IP. Look at what’s before the '/' and try again.]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "192.168.64.0/18" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ip_input_decimal]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.0/13]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>7</sourceID>
+        <destID>24</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>24</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>bd7f9235-81cb-f046-b454-749f12edee4c</transaction_id><Selection><value>ip_input_decimal</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[255.248.0.0]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! This is the subnet mask, not the IP address. Check the part before the '/' and give it another shot!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "255.255.192.0" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ip_input_decimal]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[255.248.0.0]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>7</sourceID>
+        <destID>25</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>25</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>a7130345-1268-ce43-2570-9ce3aa680f60</transaction_id><Selection><value>prefix_length_input</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[19]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The 19 you calculated (32-13) is for the host bits, not the prefix length. The prefix length is the number after the '/'—focus on that!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "13" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[prefix_length_input]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[19]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>9</sourceID>
+        <destID>26</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>26</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>271e1613-d8f8-06cf-73ae-45f909559551</transaction_id><Selection><value>prefix_length_input</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[/13]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Close, but the prefix length doesn’t include the '/'. Focus on the number after it. Let’s try again!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "13" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[prefix_length_input]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[/13]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>9</sourceID>
+        <destID>27</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>27</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>e0ca4d10-8d09-2ebe-a53a-37162d53f45f</transaction_id><Selection><value>subnet_mask_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[00000000.00000000.00011111.11111111]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! You should write <%=prefix_length_input%> ones first, not at the end. Give it another shot!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "00000000.00000000.00011111.11111111" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[subnet_mask_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[00000000.00000000.00011111.11111111]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>10</sourceID>
+        <destID>28</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>28</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>becb38d5-6354-9b0e-9c26-cf0e47e89961</transaction_id><Selection><value>network_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[11111111.11111000.00000000.00000000]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The first network IP address is NOT the same as the subnet mask. Focus on the starting IP of the network range.]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "11111111.11111111.11000000.00000000" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[network_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[11111111.11111000.00000000.00000000]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>12</sourceID>
+        <destID>29</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>29</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7a08c469-4c25-6aa3-604f-625638d76ad9</transaction_id><Selection><value>network_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.0]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The network IP address is not always the same as the IP address given in the network configuration. Let's try again!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "192.168.64.0" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[network_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.0]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>12</sourceID>
+        <destID>30</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>30</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>e42cc40c-a717-5170-96c3-6987741529cc</transaction_id><Selection><value>broadcast_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[00001010.00000111.11111111.11111111]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! To calculate the broadcast address, you need to set all the HOST bits to 1. It looks like you either set the NETWORK bits to 1 or mistakenly copied the subnet mask. Try again!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "11111111.11111111.11000000.00000000" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[broadcast_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[00001010.00000111.11111111.11111111]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>14</sourceID>
+        <destID>31</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>31</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>380091d0-8322-baf0-4e65-05a22595e91a</transaction_id><Selection><value>first_usable_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.0.0.0]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The first network IP address is reserved and cannot be used. Please try again!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "192.168.64.0" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[first_usable_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.0.0.0]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>16</sourceID>
+        <destID>32</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>32</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>e47d2a70-f949-a146-b47c-60484789eb43</transaction_id><Selection><value>last_usable_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.7.255.255]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The last network IP address is reserved and cannot be used. Please try again!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "192.168.127.255" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[last_usable_ip_input_binary]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.7.255.255]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>17</sourceID>
+        <destID>33</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>33</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>2f1a27de-c909-7690-9eac-222fbe4b1925</transaction_id><Selection><value>first_verification_option</value></Selection><Action><value>UpdateComboBox</value></Action><Input><value><![CDATA[ False]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The IP address <%=first_verification_ip%>falls within the usable range and is valid. Review the range of usable IPs and try again!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please select " True" from the highlighted menu.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[first_verification_option]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateComboBox]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ False]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>18</sourceID>
+        <destID>34</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>34</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>d596e0dd-38a1-8a08-c0f1-da5596702536</transaction_id><Selection><value>second_verification_option</value></Selection><Action><value>UpdateComboBox</value></Action><Input><value><![CDATA[False]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The IP address <%=second_verification_ip%> falls within the usable range and is valid. Review the range of usable IPs and try again!]]></buggyMessage>
+            <successMessage><![CDATA[Incorrect. The IP address <%=second_verification_ip%> does not fall within the usable range and is valid. Review the range of usable IPs.]]></successMessage>
+            <hintMessage><![CDATA[Please select " True" from the highlighted menu.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[second_verification_option]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateComboBox]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[False]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>19</sourceID>
+        <destID>35</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>35</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>1d0af5a7-f16b-b395-1f11-fea9ff4958b9</transaction_id><Selection><value>igk9l</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.0/9]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Not quite! The 9 you entered represents the number of host bits, not the prefix length (number of network bits). Review the hints and try again!]]></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please enter "192.168.64.0/8" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[igk9l]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.0/9]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>21</sourceID>
+        <destID>36</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>36</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>786bcb4c-798d-7ea9-6747-009473a5e8de</transaction_id><Selection><value>default_gateway_input</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10.2.0.1]]></value></Input></properties></message>
+            <buggyMessage><![CDATA[Incorrect. The exit point in this network map is not the border router but the firewall. Check out the hints & try again!]]></buggyMessage>
+            <successMessage><![CDATA[[Empty Message]]]></successMessage>
+            <hintMessage><![CDATA[Please enter "192.168.64.1" in the highlighted field.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Buggy Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[default_gateway_input]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[10.2.0.1]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>20</sourceID>
+        <destID>37</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>37</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>6a3b8aa0-b655-48ba-d366-25975896e731</transaction_id><Selection><value>second_verification_option</value></Selection><Action><value>UpdateComboBox</value></Action><Input><value><![CDATA[ True]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please select " True" from the highlighted menu.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[second_verification_option]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateComboBox]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ True]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>19</sourceID>
+        <destID>20</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <EdgesGroups ordered="true">
+    </EdgesGroups>
+</stateGraph>

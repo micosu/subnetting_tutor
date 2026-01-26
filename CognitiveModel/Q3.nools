@@ -1,0 +1,22 @@
+global problem_statement = "An educational institution, Innovate Academy, has recently expanded and assigned your team to configure a secure subnet for its research department. The network for this subnet is configured as 10.2.0.0/13. Ensure that the network is set up to avoid address conflicts.";
+global network_map_diagram = "../HTML/Assets/networkmap3.png";
+global task_1_statement = "Based on the given network configuration of 10.2.0.0/13";
+global task_4_statement = "Find the smallest subnet within 10.2.0.0/13 that can provide at least 500 usable IP addresses. Write this subnet in CIDR notation.";
+
+
+global IPv4="10.2.0.0/13";
+global verfication1 = "10.2.0.1";
+global verfication2 = "10.7.255.254";
+
+global v1 = " True";
+global v2 = " True";
+
+global thedefaultGateway = "10.2.0.3";
+global aimNumber = 500; // minimun # of IP
+
+global broadcastIPImage = "../HTML/Assets/P3_Broadcast.png";
+global networkIPImage = "../HTML/Assets/P3_Network.png";
+global subnetMaskImage = "../HTML/Assets/P3_SubnetMask.png";
+global binaryCheat = "../HTML/Assets/binary_cheat.png";
+
+import("productionrules.nools");

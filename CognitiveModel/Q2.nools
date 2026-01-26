@@ -1,0 +1,23 @@
+global problem_statement = "Your company, DataNest Solutions, is setting up an internal network for a new branch office. The network is configured with the subnet 192.168.64.0/18. As part of the network team, your responsibility is to confirm that the setup allows for efficient IP distribution and avoids conflicts.";
+global network_map_diagram = "../HTML/Assets/networkmap2.png";
+global task_1_statement = "Based on the given network configuration of 192.168.64.0/18";
+global task_4_statement = "Find the first subnet within 192.168.64.0/18 that provides at least 200 usable IP addresses. Write this subnet in CIDR notation.";
+
+
+global IPv4="192.168.64.0/18";
+global verfication1 = "172.17.0.1";
+global verfication2 = "172.31.255.255";
+
+global v1 = " True";
+global v2 = " False";
+
+global thedefaultGateway = "192.168.64.2";
+global aimNumber = 200; // minimun # of IP
+
+global broadcastIPImage = "../HTML/Assets/P2_Broadcast.png";
+global networkIPImage = "../HTML/Assets/P2_Network.png";
+global subnetMaskImage = "../HTML/Assets/P2_SubnetMask.png";
+global binaryCheat = "../HTML/Assets/binary_cheat.png";
+
+import("productionrules.nools");
+

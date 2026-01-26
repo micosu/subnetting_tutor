@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="true" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" confirmDone="false" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
+  <startNodeMessages>
+    <message>
+      <verb>NotePropertySet</verb>
+      <properties>
+        <MessageType>StartProblem</MessageType>
+        <ProblemName>empty</ProblemName>
+      </properties>
+    </message>
+    <message>
+      <verb>NotePropertySet</verb>
+      <properties>
+        <MessageType>StartStateEnd
+        </MessageType>
+      </properties>
+    </message>
+  </startNodeMessages>
+  <node locked="false" doneState="false">
+    <text>empty</text>
+    <uniqueID>1</uniqueID>
+    <dimension>
+      <x>217</x>
+      <y>25</y>
+    </dimension>
+  </node>
+  <EdgesGroups ordered="false"></EdgesGroups>
+</stateGraph>

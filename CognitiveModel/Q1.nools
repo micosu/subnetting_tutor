@@ -1,0 +1,24 @@
+global problem_statement = "Your company TechHorizon Inc. has expanded to a new floor, adding numerous workstations and IoT devices to the internal network. As part of the IT team, your task is to ensure the expanded network, using subnet 172.16.0.0/12, is correctly configured";
+global network_map_diagram = "../HTML/Assets/networkmap1.png";
+global task_1_statement = "Based on the given network configuration of 172.16.0.0/12";
+
+
+global IPv4="172.16.0.0/12";
+global verfication1 = "172.17.0.1";
+global verfication2 = "172.31.255.255";
+
+global v1 = " True";
+global v2 = " False";
+
+global thedefaultGateway = "172.16.0.3";
+global aimNumber = 200; // minimun # of IP
+
+global broadcastIPImage = "../HTML/Assets/P1_Broadcast.png";
+global networkIPImage = "../HTML/Assets/P1_Network.png";
+global subnetMaskImage = "../HTML/Assets/P1_SubnetMask.png";
+global binaryCheat = "../HTML/Assets/binary_cheat.png";
+
+import("productionrules.nools");
+
+global task_4_statement = `SPLIT the ${IPv4} block and identify the first subnet that provides at least 100 usable IP addresses. Please write the answer in the format (X.X.X.X/XX).`;
+

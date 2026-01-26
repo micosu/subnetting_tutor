@@ -1,0 +1,411 @@
+::placeholder {
+    color: lightgray;
+    opacity: 0.8;
+}
+
+#iz9j {
+    height: 850px;
+    margin: 0px 0px 50px 0px;
+}
+
+#iegv {
+    width: 393px;
+    margin: 0px 0px 0px 15px;
+    height: 850px;
+}
+
+#isk4 {
+    width: 640px;
+    margin: 0px 0px 0px 35px;
+    height: 850px;
+}
+
+#i80r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    flex-wrap: wrap;
+    margin: 10px 0px 0px 0px;
+}
+
+#i6og {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 10px;
+    max-width: 68px;
+}
+
+#i8ot1 {
+    margin-right: 10px;
+    width: 350px;
+    height: 300px;
+}
+
+#inhkw {
+    height: 200px;
+}
+
+#i1rs8 {
+    height: 20px;
+    min-height: 20px;
+}
+
+#iw8br {
+    width: 0px;
+    min-height: 40px;
+    height: 290px;
+    min-width: 40px;
+}
+
+#icznb {
+    width: 275px;
+}
+
+#igboh {
+    min-height: 40px;
+}
+
+#iofqh {
+    width: 185px;
+    height: 0px;
+    min-height: 38px;
+}
+
+#iqlzz {
+    width: 185px;
+    min-height: 25px;
+    align-content: center;
+}
+
+#i81jp {
+    width: 180px;
+    min-height: 30px;
+    align-content: center;
+}
+
+#i1ede {
+    width: 180px;
+    min-height: 30px;
+}
+
+#ipmbf {
+    width: 180px;
+    min-height: 30px;
+}
+
+#iidxi {
+    width: 180px;
+    min-height: 20px;
+    min-width: 30px;
+}
+
+#isia3 {
+    height: 34px;
+    min-height: 40px;
+    margin: 7px 0px 0px 0px;
+}
+
+#idvss {
+    height: 36px;
+    min-height: 40px;
+    margin: 7px 0px 0px 0px;
+}
+
+#igk9l {
+    height: 36px;
+    width: 168px;
+}
+
+#ip_TPA_binary {
+    height: 36px;
+    width: 300px;
+    margin: 0px 0px 0px 15px;
+    border: 0 solid #0000ff;
+}
+
+#ip_input_decimal {
+    height: 36px;
+    width: 168px;
+    margin: 0px 0px 0px 0px;
+}
+
+#prefix_length_input {
+    height: 36px;
+    width: 168px;
+}
+
+#subnet_mask_TPA_decimal {
+    height: 36px;
+    width: 168px;
+    margin: 0 0 0 15px;
+}
+
+#subnet_mask_input_binary {
+    height: 36px;
+    width: 300px;
+}
+
+#network_ip_input_binary {
+    height: 36px;
+    width: 300px;
+}
+
+#broadcast_ip_input_binary {
+    height: 36px;
+    width: 300px;
+}
+
+#network_ip_TPA_decimal {
+    height: 36px;
+    width: 168px;
+    margin: 0 0 0 15px;
+}
+
+#broadcast_ip_TPA_decimal {
+    height: 36px;
+    width: 168px;
+    margin: 0 0 0 15px;
+}
+
+#last_usable_ip_input_binary {
+    height: 36px;
+    width: 168px;
+    margin: 0 0 0 15px;
+}
+
+#problem_statement {
+    width: 505px;
+    margin: 10px 0 0 0;
+    height: 100px;
+}
+
+#network_map {
+    width: 504px;
+    margin: 10px 0 0 0;
+}
+
+#i7npg {
+    width: 10px;
+    height: 111px;
+    min-height: 40px;
+}
+
+#i9252 {
+    width: 209px;
+    height: 10px;
+    min-height: 40px;
+}
+
+#ihlzb {
+    width: 209px;
+    height: 10px;
+    min-height: 40px;
+}
+
+#il3mj {
+    height: 10px;
+    min-height: 40px;
+    justify-content: space-around;
+}
+
+#i9ba3 {
+    height: 10px;
+    min-height: 40px;
+    justify-content: space-around;
+}
+
+#inbpm {
+    width: 285px;
+    height: 110px;
+    min-height: 40px;
+}
+
+#icdqm {
+    width: 187px;
+    height: 39px;
+    align-content: center;
+}
+
+#iyq19 {
+    width: 187px;
+    height: 38px;
+    align-content: center;
+}
+
+#second_verification_option {
+    width: 168px;
+    height: 36px;
+}
+
+#first_verification_option {
+    width: 168px;
+    height: 36px;
+}
+
+#i9pio {
+    width: 10px;
+}
+
+#ikb7j {
+    width: 285px;
+}
+
+#i9o8k {
+    width: 187px;
+    height: 38px;
+    align-content: center;
+}
+
+#first_usable_ip_input_binary {
+    height: 36px;
+    width: 168px;
+}
+
+#i8gq1 {
+    width: 10px;
+}
+
+#izvbu {
+    width: 286px;
+}
+
+#iveic {
+    width: 187px;
+    height: 38px;
+    align-content: center;
+}
+
+#default_gateway_input {
+    height: 36px;
+    width: 168px;
+}
+
+#iusg9f {
+    margin: 0 0px 0px 15px;
+    padding: 0 0px 0px 0px;
+}
+
+#ikcm5 {
+    margin: 10px 0 0 0;
+}
+
+#i1rkd {
+    margin: 10px 0 0 0;
+}
+
+#izo38 {
+    margin: 10px 0 0 0;
+    height: 400px;
+}
+
+#ibszz {
+    margin: 0 0px 0px 0px;
+}
+
+#izm91 {
+    margin: 10px 0 0 0;
+}
+
+#i7sk3 {
+    margin: 35px 0px 0px 0px;
+}
+
+#ipifx {
+    margin: 10px 0 0 0;
+}
+
+#i4gls {
+    margin: 10px 0 0 0;
+}
+
+#ih69i {
+    margin: 50px 0px 0px 0px;
+}
+
+#i02ec {
+    margin: 10px 0 0 0;
+}
+
+#ipsnk {
+    margin: 10px 0 0 0;
+}
+
+#io3fl {
+    margin: 10px 0 0 0;
+}
+
+#izpyc {
+    margin: 10px 0 0 0;
+    min-height: 40px;
+}
+
+#i60vif {
+    margin: 0 0px 0px 0px;
+}
+
+#i33ol {
+    height: 30px;
+    align-content: center;
+}
+
+#iqoa3 {
+    height: 30px;
+    align-content: center;
+}
+
+#iqill {
+    height: 30px;
+    align-content: center;
+}
+
+#i5vgf {
+    min-height: 40px;
+    margin: 7px 0px 0px 0px;
+}
+
+#isgsp {
+    height: 30px;
+    align-content: center;
+}
+
+#i1256 {
+    height: 30px;
+    align-content: center;
+}
+
+#i76ui {
+    height: 30px;
+    align-content: center;
+}
+
+#ijx44 {
+    min-height: 40px;
+    margin: 7px 0px 0px 0px;
+}
+
+#ieo4g {
+    min-height: 40px;
+    margin: 7px 0px 0px 0px;
+}
+
+#i2fn3g {
+    height: 38px;
+    width: 90%;
+}
+
+#task_1_statement {
+    height: 24px;
+}
+
+#first_verification_ip {
+    height: 36px;
+    width: 168px;
+}
+
+#second_verification_ip {
+    height: 36px;
+}
