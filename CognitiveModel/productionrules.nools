@@ -61,6 +61,43 @@ rule bootstrap {
         assert(new TPA(networkMap.name, "setImage", network_map_diagram));
         assert(new TPA(verification1.name, "UpdateTextField", verfication1));
         assert(new TPA(verification2.name, "UpdateTextField", verfication2));
+      
+        var dialog;
+
+        dialog = $("<div>", {
+          id: "dialog-form",
+          title: "Network Map"
+        }).dialog({
+          autoOpen: false,
+          height: 500,
+          width: 675,
+          modal: true,
+          resizable: true
+        });
+        
+        dialog.html(`
+          <p class="networkMapDialogBox" style="text-align:center;">
+            You can move and resize this window
+          </p>
+          <div id="networkMapImageHolder"></div>
+        `);
+        
+        const holder = document.getElementById("networkMapImageHolder");
+        holder.innerHTML = ""; // prevent duplicates
+        
+        var elem = document.createElement("img");
+        elem.classList.add("networkMapImg");       // <-- important
+        elem.setAttribute("src", network_map_diagram);
+        elem.setAttribute("alt", "Network map diagram");
+        holder.appendChild(elem);
+        
+        // Use your CTAT div if you want, but I'd recommend your real element id:
+        let networkMapButton = document.getElementById("network_map"); 
+        networkMapButton.addEventListener("click", function () {
+          dialog.dialog("option", "modal", false);
+          dialog.dialog("open");
+        });
+ 
 
         setProblemAttribute("use_backtracking", true);
         halt();

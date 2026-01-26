@@ -183,10 +183,26 @@
     height: 100px;
 }
 
-#network_map {
-    width: 504px;
-    margin: 10px 0 0 0;
+/* The area inside the dialog that holds the image */
+#networkMapImageHolder {
+  width: 100%;
+  height: 100%;
+  overflow: auto;          /* scroll if needed */
 }
+
+/* Make the image scale to dialog width */
+.networkMapImg {
+  max-width: 90%;
+  height: auto;            /* preserve aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Optional: prevent jQuery UI content from creating a second scrollbar */
+.ui-dialog .ui-dialog-content {
+  overflow: hidden;
+}
+
 
 #i7npg {
     width: 10px;

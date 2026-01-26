@@ -5,10 +5,10 @@ global task_4_statement = "Find the first subnet within 192.168.64.0/18 that pro
 
 
 global IPv4="192.168.64.0/18";
-global verfication1 = "172.17.0.1";
-global verfication2 = "172.31.255.255";
+global verfication1 = "192.168.63.2";
+global verfication2 = "192.168.80.200";
 
-global v1 = " True";
+global v1 = " False";
 global v2 = " False";
 
 global thedefaultGateway = "192.168.64.2";
