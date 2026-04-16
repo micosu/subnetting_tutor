@@ -1,8 +1,9 @@
 import("productionrules.nools");
 
 global IPv4="172.16.0.0/12";
-global verfication1 = "172.17.0.1";
-global verfication2 = "172.31.255.255";
+global verification1 = "172.17.0.1";
+global verification2 = "172.31.255.255";
+global subnet = false;
 
 global problem_statement = `Your company TechHorizon Inc. has expanded to a new floor, adding numerous workstations and IoT devices to the internal network. 
 As part of the IT team, your task is to ensure the expanded network, using subnet ${IPv4}, is correctly configured`;

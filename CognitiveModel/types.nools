@@ -19,6 +19,7 @@ define Problem {
   IPv4: null,
   IPaddressDecimal:null,
   IPaddressBinary: null,
+  secondIPaddressBinary: null,
   prefixLength: null,
   subnetMaskBinary: null,
   subnetMaskDecimal: null,
@@ -48,9 +49,10 @@ define Problem {
   ieVerification2DropDown: null,
   ieDefaultGateway: null,
 	ieNewCIDR: null,
-  constructor: function(name, ipv4,IPaddressDecimal,IPaddressBinary,prefixLength,subnetMaskBinary,subnetMaskDecimal,
+  constructor: function(name, ipv4,IPaddressDecimal,IPaddressBinary, secondIPaddresBinary, prefixLength,subnetMaskBinary,subnetMaskDecimal,
                        firstOrNetworkIPBinary,firstOrNetworkIPDecimal,lastOrBroadcastIPBinary,lastOrBroadcastIPDecimal,
-                       firstUsableIP,lastUsableIP,verification1Dropdown,verification2Dropdown, defaultGateway, newCIDR) {
+                       firstUsableIP,lastUsableIP,verification1Dropdown,verification2Dropdown, 
+                        defaultGateway,newCIDR) {
 		this.name = name;
 		this.IPv4 = ipv4;
     this.ieIPaddressDecimal = IPaddressDecimal;
@@ -71,6 +73,49 @@ define Problem {
 	}
 }
 
+define BinaryScaffolding {
+    octet1_bit1: null,
+    octet1_bit2: null,
+    octet1_bit3: null,
+    octet1_bit4: null,
+    octet1_bit5: null,
+    octet1_bit6: null,
+    octet1_bit7: null,
+    octet1_bit8: null,
+
+    octet2_bit1: null,
+    octet2_bit2: null,
+    octet2_bit3: null,
+    octet2_bit4: null,
+    octet2_bit5: null,
+    octet2_bit6: null,
+    octet2_bit7: null,
+    octet2_bit8: null,
+
+    octet3_bit1: null,
+    octet3_bit2: null,
+    octet3_bit3: null,
+    octet3_bit4: null,
+    octet3_bit5: null,
+    octet3_bit6: null,
+    octet3_bit7: null,
+    octet3_bit8: null,
+
+    octet4_bit1: null,
+    octet4_bit2: null,
+    octet4_bit3: null,
+    octet4_bit4: null,
+    octet4_bit5: null,
+    octet4_bit6: null,
+    octet4_bit7: null,
+    octet4_bit8: null,
+
+    nextPos: 'octet1_bit1',
+    all_octets_done: null,
+    // constructor: function(nextPos) {
+    //   this.nextPos = nextPos;
+    // }
+}
 
 // The following are standard types needed for the Nools model tracer.
 // We recommend not changing these types.
@@ -113,5 +158,10 @@ define Hint {
 	constructor: function(m, optPrecedence) {
 		this.msg = m;
 		this.precedence = optPrecedence || 0;
+	}
+}
+
+define IsHintMatch {
+	constructor: function() {
 	}
 }

@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#i15i {
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+
+#i8sv {
+    font-size: xx-large;
+}
+
+#ia1pjk {
+    font-size: 32px;
+}
+
+#ijjl9 {
+    font-size: 20px;
+    margin: 15px 0px 0px 0px;
+}
+
+#igxug {
+    padding: 0px 10px 0px 10px;
+}
+
+#ihsls {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#iisjo {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#ixb1q {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#imfml {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#is4rd {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#iomwnr {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#ixyyso {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#ixjlj6 {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#i71q1c {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+#i9il {
+    padding: 0px 0px 0px 0px;
+    transition: padding 0.5s ease-in-out;
+}
+
+#iaona2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#i9woi9 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#ix6ud6 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#it07g {
+    font-weight: normal;
+}
+
+#iauzdg {
+    font-weight: normal;
+}
+
+#network_map {
+    width: 250px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.networkMapDialogBox {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.networkMapImg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#networkMapImageHolder {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#dialog-form {
+    display: none;
+}

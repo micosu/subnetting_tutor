@@ -1,8 +1,9 @@
 import("productionrules.nools");
 
 global IPv4="10.2.0.0/13";
-global verfication1 = "10.2.0.1";
-global verfication2 = "10.7.255.254";
+global verification1 = "10.2.0.1";
+global verification2 = "10.7.255.254";
+global subnet = false;
 
 global problem_statement = `An educational institution, Innovate Academy, has recently expanded and assigned your team to configure a secure subnet for its research department.  
 The network for this subnet is configured as ${IPv4}. Ensure that the network is set up to avoid address conflicts.`;
