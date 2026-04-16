@@ -2,7 +2,14 @@ import("types.nools");
 
 // RULE bootstrap
 // Always fired at startup for initialization of working memory
-//
+
+// Binary Scaffolding Helper function
+function getBit(octetValue, bitPosition) {
+    // bitPosition 1-8, where 1 = 128, 8 = 1
+    const bitValues = [128, 64, 32, 16, 8, 4, 2, 1];
+    return (parseInt(octetValue) & bitValues[bitPosition - 1]) ? 1 : 0;
+}
+
 rule bootstrap {
     when {
         s: Boolean s === false from false;
@@ -61,6 +68,14 @@ rule bootstrap {
         assert(new TPA(networkMap.name, "setImage", network_map_diagram));
         assert(new TPA(verification1.name, "UpdateTextField", verfication1));
         assert(new TPA(verification2.name, "UpdateTextField", verfication2));
+
+        if (subnet) {
+          let prefix_row = document.getElementById("prefix_row");
+          prefix_row.style.display = "none";
+        } else {
+          let subnet_row = document.getElementById("subnet_mask_row");
+          subnet_row.style.display = "none";
+        }
       
         var dialog;
 
@@ -97,6 +112,13 @@ rule bootstrap {
           dialog.dialog("option", "modal", false);
           dialog.dialog("open");
         });
+
+        // For Binary scaffolding, replace octets with those of current IP
+        let ip = IPv4.split("/")[0].split(".");
+        ip.forEach((octet, i) => {
+          document.getElementById(`octet_val_${i + 1}`).textContent = octet;
+        });
+        
  
 
         setProblemAttribute("use_backtracking", true);
@@ -110,21 +132,21 @@ rule findIPAddress {
     when {
         prob : Problem prob.IPaddressDecimal == null {IPv4: ipv4, ieIPaddressDecimal: sel};
         ie : InterfaceElement ie.name == sel && ie.value == null;
-        ipBinary: InterfaceElement ipBinary.name == "ip_TPA_binary";  
+        // ipBinary: InterfaceElement ipBinary.name == "ip_TPA_binary";  
     }
     then {
         let ip = IPv4.split("/")[0];
-        let ip_binary = ip.split('.').map(octet => (+octet).toString(2).padStart(8, '0')).join('.');
+        // let ip_binary = ip.split('.').map(octet => (+octet).toString(2).padStart(8, '0')).join('.');
         assert(new Hint("The IP address is part of the given network configuration: " + IPv4));
         assert(new Hint("Look at the value before the '/' in " + IPv4 + ". This is the network's IP address."));
         assert(new Hint ("Please enter: " + ip));
             // model observable action
 	      if (checkSAI({selection: sel, action: "UpdateTextField", input: ip})) {
              modify(prob, "IPaddressDecimal", ip); 
-             modify(prob, "IPaddressBinary", ip_binary); 
+             // modify(prob, "IPaddressBinary", ip_binary); 
 	           modify(ie, "value", ip);
-             modify(ipBinary, "value", ip_binary);
-             assert (new TPA("ip_TPA_binary","UpdateTextField",ip_binary));
+             // modify(ipBinary, "value", ip_binary);
+             // assert (new TPA("ip_TPA_binary","UpdateTextField",ip_binary));
 	           halt();
         }
         else {
@@ -174,6 +196,56 @@ rule buggy_2_findIPAddress {
   }
 }
 
+rule convertIPToBinary {
+    when {
+        prob : Problem prob.IPaddressDecimal != null && prob.IPaddressBinary == null {IPv4: ipv4};
+        ipBinary: InterfaceElement ipBinary.name == "ip_TPA_binary" && ipBinary.value == null;  
+    }
+    then {
+        let ip = IPv4.split("/")[0];
+        let ip_binary = ip.split('.').map(octet => (+octet).toString(2).padStart(8, '0')).join('.');
+            // model observable action
+	      if (checkSAI({selection: ipBinary.name, action: "UpdateTextField", input: ip_binary})) {
+             modify(prob, "IPaddressBinary", ip_binary); 
+             modify(ipBinary, "value", ip_binary);
+	           // halt();
+        }
+        else {
+            let scaffold = document.getElementById("binary_scaffolding");
+            scaffold.style.display = "block";
+            assert(new TPA(ipBinary.name, "lock"));
+            
+	     }
+      modify(ipBinary, "value", ip_binary);
+      halt();
+    }
+}
+
+rule checkAllOctetBits {
+    when {
+        prob: Problem prob.IPaddressDecimal != null {IPv4: ipv4};
+        input: InterfaceElement 
+            /^octet[1-4]_bit[1-8]$/.test(input.name) && 
+            input.value != null 
+            {name: inputName, value: inputValue};
+    }
+    then {
+        // Parse which octet and bit from the input name e.g. "octet2_bit5"
+        let parts = inputName.match(/octet(\d)_bit(\d)/);
+        let octetIdx = parseInt(parts[1]) - 1;   // 0-based
+        let bitPos   = parseInt(parts[2]);        // 1-based
+
+        let octets = ipv4.split("/")[0].split(".");
+        let correct = getBit(octets[octetIdx], bitPos);
+
+        if (checkSAI({selection: ipBinary.name, action: "UpdateTextField", input: ip_binary})) {
+            correct(input);
+        } else {
+            incorrect(input);
+        }
+    }
+}
+
 // ************************************************************
 
 rule findPrefixLength {
@@ -190,7 +262,10 @@ rule findPrefixLength {
         assert(new Hint ("Please enter: " + prefixLength));
             // model observable action
 	      if (checkSAI({selection: sel, action: "UpdateTextField", input: prefixLength})) {
-             modify(prob, "prefixLength", prefixLength);    
+             modify(prob, "prefixLength", prefixLength);
+            let subnetMaskBinary = Array.from({ length: 4 }, (_, i) =>
+                parseInt("1".repeat(prefixLength).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2).toString(2).padStart(8, "0")).join(".");
+             modify(prob, "subnetMaskBinary", subnetMaskBinary);  
 	           modify(ie, "value", prefixLength);         
 	           halt();
         }
@@ -435,7 +510,7 @@ rule findFirstUsableIP {
     then {   
         let firstusableip = networkip.split(".").map((octet, i, arr) => i === arr.length - 1 ? parseInt(octet, 10) + 1 : parseInt(octet, 10)).join(".");
                 // hints
-        assert(new Hint("The first usable IP address is the first address available for assignment to a device, following the network address."));
+        assert(new Hint("The first assignable IP address is the first address available for assignment to a device, following the network address."));
         assert(new Hint("Based on the the network address (in decimal)" + networkip + " , add 1."));
         assert (new Hint ("Please enter: " + firstusableip));
       
@@ -481,7 +556,7 @@ rule findLastUsableIP {
     then {   
         let lastusableip = broadcastip.split(".").map((octet, i, arr) => i === arr.length - 1 ? parseInt(octet, 10) - 1 : parseInt(octet, 10)).join(".");
         // hint
-        assert(new Hint("The last usable IP address is the highest IP address in the network range that can be assigned to a device, excluding the broadcast address."));
+        assert(new Hint("The last assignable IP address is the highest IP address in the network range that can be assigned to a device, excluding the broadcast address."));
         assert(new Hint("Based on the the broadcast address (in decimal)" + broadcastip + " , mius 1."));
         assert (new Hint ("Please enter: " + lastusableip));
       
@@ -525,8 +600,8 @@ rule makeVeri1 {
     }
     then {   
        // hint
-        assert(new Hint("A usable IP address falls within the usable range of the subnet."));
-        assert(new Hint("Check if " + verfication1 + " falls within the usable range " + prob.firstUsableIP + " and " + prob.lastUsableIP));
+        assert(new Hint("An assignable IP address falls within the assignable range of the subnet."));
+        assert(new Hint("Check if " + verfication1 + " falls within the assignable range " + prob.firstUsableIP + " and " + prob.lastUsableIP));
         assert(new Hint("Please enter: " + v1));
 
         if (checkSAI({selection: sel, action: "UpdateComboBox", input: v1})) {
@@ -548,8 +623,8 @@ rule makeVeri2 {
     }
     then {   
         // hint
-        assert(new Hint("A usable IP address falls within the usable range of the subnet."));
-        assert(new Hint("Check if " + verfication2 + " falls within the usable range " + prob.firstUsableIP + " and " + prob.lastUsableIP));
+        assert(new Hint("An assignable IP address falls within the assignable range of the subnet."));
+        assert(new Hint("Check if " + verfication2 + " falls within the assignable range " + prob.firstUsableIP + " and " + prob.lastUsableIP));
         assert(new Hint("Please enter: " + v2));
         if (checkSAI({selection: sel, action: "UpdateComboBox", input: v2})) {
             modify(prob, "verification2Dropdown", v2); 
