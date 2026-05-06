@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Package label="subnetting_ccac_demo" description="subnetting_ccac_demo" save_state="true">
+<Package label="subnetting_tutor_spring_2026" description="This package contains the version of the subnetting tutor that we are using in Michael Rinsem's Spring 2026 Networking Class (CIT 120)." save_state="true">
   <Problems>
-    <Problem name="Q1" label="Q1" tutor_flag="tutor" model_file="Q1.nools" student_interface="subnetting_interface.html">
+    <Problem name="post-test" label="post-test" tutor_flag="test" model_file="FinalBRDs/post-test.brd" student_interface="HTML/post-test.html">
       <Skills>
       </Skills>
     </Problem>
-    <Problem name="Q2" label="Q2" tutor_flag="tutor" model_file="Q2.nools" student_interface="subnetting_interface.html">
+    <Problem name="Pretest" label="Pretest" tutor_flag="test" model_file="FinalBRDs/pre-test.brd" student_interface="HTML/pre-test.html">
       <Skills>
       </Skills>
     </Problem>
-    <Problem name="Q3" label="Q3" tutor_flag="tutor" model_file="Q3.nools" student_interface="subnetting_interface.html">
+    <Problem name="Q1" label="Q1" tutor_flag="tutor" model_file="CognitiveModel/Q1.nools" student_interface="HTML/subnetting_interface.html">
       <Skills>
       </Skills>
     </Problem>
-    <Problem name="Q4" label="Q4" tutor_flag="tutor" model_file="Q4.nools" student_interface="subnetting_interface.html">
+    <Problem name="Q2" label="Q2" tutor_flag="tutor" model_file="CognitiveModel/Q2.nools" student_interface="HTML/subnetting_interface.html">
+      <Skills>
+      </Skills>
+    </Problem>
+    <Problem name="Q3" label="Q3" tutor_flag="tutor" model_file="CognitiveModel/Q3.nools" student_interface="HTML/subnetting_interface.html">
+      <Skills>
+      </Skills>
+    </Problem>
+    <Problem name="Q4" label="Q4" tutor_flag="tutor" model_file="CognitiveModel/Q4.nools" student_interface="HTML/subnetting_interface.html">
       <Skills>
       </Skills>
     </Problem>
   </Problems>
   <ProblemSets>
-    <ProblemSet name="CCAC DEMO" label="Ccac demo" status="active" image_height="0" filler_height="0" team_size="1" selection_algorithm="sequential" max_count="1000" max_repeat="1" initial_sequence="0">
+    <ProblemSet name="CCAC DEMO" label="Ccac demo" status="active" image_height="0" team_size="1" selection_algorithm="sequential" max_count="1000" max_repeat="1" initial_sequence="0">
       <Problems>
-        <Problem name="Q1" position="1" role="0"/>
-        <Problem name="Q2" position="2" role="0"/>
-        <Problem name="Q3" position="3" role="0"/>
-        <Problem name="Q4" position="4" role="0"/>
+        <Problem name="Pretest" position="1" role="0"/>
+        <Problem name="Q1" position="2" role="0"/>
+        <Problem name="Q2" position="3" role="0"/>
+        <Problem name="Q3" position="4" role="0"/>
+        <Problem name="Q4" position="5" role="0"/>
+        <Problem name="post-test" position="6" role="0"/>
       </Problems>
       <Skills>
       </Skills>
@@ -38,43 +48,29 @@
     </ProblemSet>
   </ProblemSets>
   <Assets>
-    <Asset name="productionrules.brd" path="CognitiveModel"/>
-    <Asset name="productionrules.nools" path="CognitiveModel"/>
-    <Asset name="Q1.brd" path="CognitiveModel"/>
-    <Asset name="Q1.nools" path="CognitiveModel"/>
-    <Asset name="Q2.brd" path="CognitiveModel"/>
-    <Asset name="Q2.nools" path="CognitiveModel"/>
-    <Asset name="Q3.brd" path="CognitiveModel"/>
-    <Asset name="Q3.nools" path="CognitiveModel"/>
-    <Asset name="Q4.brd" path="CognitiveModel"/>
-    <Asset name="Q4.nools" path="CognitiveModel"/>
-    <Asset name="types.brd" path="CognitiveModel"/>
-    <Asset name="types.nools" path="CognitiveModel"/>
-    <Asset name="cisco.brd" path="FinalBRDs"/>
-    <Asset name="Q1.brd" path="FinalBRDs"/>
-    <Asset name="Q2.brd" path="FinalBRDs"/>
-    <Asset name="Q3.brd" path="FinalBRDs"/>
-    <Asset name="Q4.brd" path="FinalBRDs"/>
-    <Asset name="cisco.html" path="HTML"/>
-    <Asset name="subnetting_interface.html" path="HTML"/>
-    <Asset name="binary_cheat.png" path="HTML/Assets"/>
-    <Asset name="cisco-styles.css" path="HTML/Assets"/>
-    <Asset name="networkmap1.png" path="HTML/Assets"/>
-    <Asset name="networkmap2.png" path="HTML/Assets"/>
-    <Asset name="networkmap3.png" path="HTML/Assets"/>
-    <Asset name="networkmap4.png" path="HTML/Assets"/>
-    <Asset name="P1_Broadcast.png" path="HTML/Assets"/>
-    <Asset name="P1_Network.png" path="HTML/Assets"/>
-    <Asset name="P1_SubnetMask.png" path="HTML/Assets"/>
-    <Asset name="P2_Broadcast.png" path="HTML/Assets"/>
-    <Asset name="P2_Network.png" path="HTML/Assets"/>
-    <Asset name="P2_SubnetMask.png" path="HTML/Assets"/>
-    <Asset name="P3_Broadcast.png" path="HTML/Assets"/>
-    <Asset name="P3_Network.png" path="HTML/Assets"/>
-    <Asset name="P3_SubnetMask.png" path="HTML/Assets"/>
-    <Asset name="P4_Broadcast.png" path="HTML/Assets"/>
-    <Asset name="P4_Network.png" path="HTML/Assets"/>
-    <Asset name="P4_SubnetMask.png" path="HTML/Assets"/>
-    <Asset name="subnetting_interface-styles.css" path="HTML/Assets"/>
+    <Asset name="subnetting_tutor_spring_2026" path=".." asset_type="directory"/>
+    <Asset name="CognitiveModel" asset_type="directory"/>
+    <Asset name="productionrules.nools" path="CognitiveModel" asset_type="file"/>
+    <Asset name="Q1.nools" path="CognitiveModel" asset_type="file"/>
+    <Asset name="Q2.nools" path="CognitiveModel" asset_type="file"/>
+    <Asset name="Q3.nools" path="CognitiveModel" asset_type="file"/>
+    <Asset name="Q4.nools" path="CognitiveModel" asset_type="file"/>
+    <Asset name="types.nools" path="CognitiveModel" asset_type="file"/>
+    <Asset name="FinalBRDs" asset_type="directory"/>
+    <Asset name="post-test.brd" path="FinalBRDs" asset_type="file"/>
+    <Asset name="pre-test.brd" path="FinalBRDs" asset_type="file"/>
+    <Asset name="HTML" asset_type="directory"/>
+    <Asset name="Assets" path="HTML" asset_type="directory"/>
+    <Asset name="networkmap1.png" path="HTML/Assets" asset_type="file"/>
+    <Asset name="networkmap2.png" path="HTML/Assets" asset_type="file"/>
+    <Asset name="networkmap3.png" path="HTML/Assets" asset_type="file"/>
+    <Asset name="networkmap4.png" path="HTML/Assets" asset_type="file"/>
+    <Asset name="subnet_posttest.png" path="HTML/Assets" asset_type="file"/>
+    <Asset name="subnet_pretest.png" path="HTML/Assets" asset_type="file"/>
+    <Asset name="subnetting_interface-styles.css" path="HTML/Assets" asset_type="file"/>
+    <Asset name="test-styles.css" path="HTML/Assets" asset_type="file"/>
+    <Asset name="post-test.html" path="HTML" asset_type="file"/>
+    <Asset name="pre-test.html" path="HTML" asset_type="file"/>
+    <Asset name="subnetting_interface.html" path="HTML" asset_type="file"/>
   </Assets>
 </Package>

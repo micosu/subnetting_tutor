@@ -3,6 +3,7 @@ import("productionrules.nools");
 global IPv4="10.2.0.0/13";
 global verification1 = "10.2.0.1";
 global verification2 = "10.7.255.254";
+// Whether students receive subnet mask (instead of prefix length)
 global subnet = false;
 
 global problem_statement = `An educational institution, Innovate Academy, has recently expanded and assigned your team to configure a secure subnet for its research department.  
@@ -10,12 +11,7 @@ The network for this subnet is configured as ${IPv4}. Ensure that the network is
 global network_map_diagram = "../HTML/Assets/networkmap3.png";
 global task_1_statement = `Based on the given network configuration of ${IPv4}`;
 
-
-
-global v1 = " True";
-global v2 = " True";
-
-global thedefaultGateway = "10.2.0.3";
+global thedefaultGateway = "10.2.0.1";
 global aimNumber = 500; // minimun # of IP
 
 global task_4_statement = `Find the smallest subnet within ${IPv4} that can provide at least ${aimNumber} usable IP addresses. Write this subnet in CIDR notation.`;

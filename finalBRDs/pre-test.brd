@@ -1,20 +1,8 @@
 <?xml version="1.0" standalone="yes"?>
-<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="true" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Show All Feedback" highlightRightSelection="true" confirmDone="false" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
+<stateGraph firstCheckAllStates="true" caseInsensitive="true" unordered="true" lockWidget="true" hintPolicy="Use Both Kinds of Bias" version="4.0" suppressStudentFeedback="Hide feedback but require all steps" highlightRightSelection="true" confirmDone="false" startStateNodeName="%(startStateNodeName)%" tutorType="Example-tracing Tutor">
     <startNodeMessages>
-        <message>
-      <verb>NotePropertySet</verb>
-      <properties>
-        <MessageType>StartProblem</MessageType>
-        <ProblemName>empty</ProblemName>
-      </properties>
-    </message>
-        <message>
-      <verb>NotePropertySet</verb>
-      <properties>
-        <MessageType>StartStateEnd
-        </MessageType>
-      </properties>
-    </message>
+        <message>            <verb>NotePropertySet</verb>            <properties>                <MessageType>StartProblem</MessageType>                <ProblemName>empty</ProblemName>            </properties>        </message>
+        <message>            <verb>NotePropertySet</verb>            <properties>                <MessageType>StartStateEnd</MessageType>            </properties>        </message>
     </startNodeMessages>
     <node locked="false" doneState="false">
         <text>empty</text>
@@ -25,91 +13,19 @@
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state2</text>
-        <uniqueID>2</uniqueID>
+        <text>state13</text>
+        <uniqueID>13</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>175</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state3</text>
-        <uniqueID>3</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>325</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state4</text>
-        <uniqueID>4</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>475</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state5</text>
-        <uniqueID>5</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>625</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state6</text>
-        <uniqueID>6</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>775</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state7</text>
-        <uniqueID>7</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>925</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state8</text>
-        <uniqueID>8</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>1075</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state9</text>
-        <uniqueID>9</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>1225</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state10</text>
-        <uniqueID>10</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>1375</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>state11</text>
-        <uniqueID>11</uniqueID>
-        <dimension>
-            <x>217</x>
-            <y>1525</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>state14</text>
         <uniqueID>14</uniqueID>
         <dimension>
-            <x>217</x>
-            <y>1675</y>
+            <x>317</x>
+            <y>325</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
@@ -117,12 +33,68 @@
         <uniqueID>15</uniqueID>
         <dimension>
             <x>317</x>
-            <y>625</y>
+            <y>475</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>state16</text>
         <uniqueID>16</uniqueID>
+        <dimension>
+            <x>317</x>
+            <y>625</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state17</text>
+        <uniqueID>17</uniqueID>
+        <dimension>
+            <x>317</x>
+            <y>775</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state18</text>
+        <uniqueID>18</uniqueID>
+        <dimension>
+            <x>317</x>
+            <y>925</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state19</text>
+        <uniqueID>19</uniqueID>
+        <dimension>
+            <x>317</x>
+            <y>1075</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state20</text>
+        <uniqueID>20</uniqueID>
+        <dimension>
+            <x>317</x>
+            <y>1225</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state21</text>
+        <uniqueID>21</uniqueID>
+        <dimension>
+            <x>317</x>
+            <y>1375</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state22</text>
+        <uniqueID>22</uniqueID>
+        <dimension>
+            <x>317</x>
+            <y>1525</y>
+        </dimension>
+    </node>
+    <node locked="false" doneState="false">
+        <text>state23</text>
+        <uniqueID>23</uniqueID>
         <dimension>
             <x>317</x>
             <y>1675</y>
@@ -133,11 +105,11 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>1</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>ce96bf45-e2f7-d253-3c2f-a94561390864</transaction_id><Selection><value>ip_input_decimal</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[172.16.0.0]]></value></Input></properties></message>
+            <uniqueID>12</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>606c5890-bada-1eac-e6a4-04f0a8242277</transaction_id><Selection><value>networkIPAddress</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[q1o3: 192.18.0.0]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "172.16.0.0" in the highlighted field.]]></hintMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
             <callbackFn></callbackFn>
             <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
@@ -146,19 +118,19 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ip_input_decimal]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[networkIPAddress]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[172.16.0.0]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[q1o3: 192.18.0.0]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -170,445 +142,40 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>2</destID>
+        <destID>13</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
         <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>2</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>cb717b63-8bf2-c29b-4773-7c61a055ad98</transaction_id><Selection><value>prefix_length_input</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[12]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "12" in the highlighted field.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[prefix_length_input]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[12]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>2</sourceID>
-        <destID>3</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>3</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>17783e7a-eeae-b14a-6318-60529720536b</transaction_id><Selection><value>subnet_mask_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[11111111.11110000.00000000.00000000]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "11111111.11110000.00000000.00000000" in the highlighted field.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[subnet_mask_input_binary]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[11111111.11110000.00000000.00000000]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>3</sourceID>
-        <destID>4</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>4</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>0b3c0a39-46a4-5335-b2a7-fc59008ddbe9</transaction_id><Selection><value>network_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10101100.00010000.00000000.00000000]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "10101100.00010000.00000000.00000000" in the highlighted field.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[network_ip_input_binary]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[10101100.00010000.00000000.00000000]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>4</sourceID>
-        <destID>5</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>5</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>36ff4228-ffab-de07-79f2-2dc68636fd10</transaction_id><Selection><value>broadcast_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[10101100.00011111.11111111.11111111]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "10101100.00011111.11111111.11111111" in the highlighted field.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[broadcast_ip_input_binary]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[10101100.00011111.11111111.11111111]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>5</sourceID>
-        <destID>6</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>6</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>bc72c7f9-de65-45b7-7120-66e7338bad46</transaction_id><Selection><value>first_usable_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[172.16.0.1]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "172.16.0.1" in the highlighted field.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[first_usable_ip_input_binary]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[172.16.0.1]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>6</sourceID>
-        <destID>7</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>7</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>c4b4ac0a-4fc0-88f9-bbaa-b8e90f80ffbd</transaction_id><Selection><value>last_usable_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[172.31.255.254]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "172.31.255.254" in the highlighted field.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[last_usable_ip_input_binary]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[172.31.255.254]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>7</sourceID>
-        <destID>8</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>8</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>df05fbc3-633a-682e-e3b1-98bca81a35bc</transaction_id><Selection><value>first_verification_option</value></Selection><Action><value>UpdateComboBox</value></Action><Input><value><![CDATA[ True]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please select " True" from the highlighted menu.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[first_verification_option]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateComboBox]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ True]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>8</sourceID>
-        <destID>9</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>9</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7ca70879-84e2-9a84-805c-cd07d24903b7</transaction_id><Selection><value>second_verification_option</value></Selection><Action><value>UpdateComboBox</value></Action><Input><value><![CDATA[ False]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please select " False" from the highlighted menu.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[second_verification_option]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateComboBox]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ False]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>9</sourceID>
-        <destID>10</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>10</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7c18bddd-8d34-2046-e667-ebde070950b0</transaction_id><Selection><value>default_gateway_input</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[172.16.0.3]]></value></Input></properties></message>
-            <buggyMessage></buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "172.16.0.3" in the highlighted field.]]></hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[default_gateway_input]]></matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[172.16.0.3]]></matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>unnamed</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>10</sourceID>
-        <destID>11</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
             <uniqueID>13</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>051dd010-9241-c671-6cee-48a45165e7cc</transaction_id><Selection><value>igk9l</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[172.16.0.0/8]]></value></Input></properties></message>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>f73f66f9-f63c-c163-79b2-a36e2c5c2aa2</transaction_id><Selection><value>prefixLength</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ilif1: /16]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "172.16.0.0/8" in the highlighted field.]]></hintMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
             <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
+            <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
             <checkedStatus>Never Checked</checkedStatus>
             <matchers Concatenation="true">
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[igk9l]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[prefixLength]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[172.16.0.0/8]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[ilif1: /16]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -619,41 +186,41 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>11</sourceID>
+        <sourceID>13</sourceID>
         <destID>14</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
             <uniqueID>14</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>f6690f9c-751b-c30d-827f-46781b383adc</transaction_id><Selection><value>network_ip_input_binary</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[11111111.11110000.00000000.00000000]]></value></Input></properties></message>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>eefc29bf-e4b7-bd7e-1786-43471de22cb6</transaction_id><Selection><value>broadcastAddress</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i5lsu: 192.18.255.255]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "11111111.11110000.00000000.00000000" in the highlighted field.]]></hintMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
             <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
+            <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
             <checkedStatus>Never Checked</checkedStatus>
             <matchers Concatenation="true">
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[network_ip_input_binary]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[broadcastAddress]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[11111111.11110000.00000000.00000000]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[i5lsu: 192.18.255.255]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -664,41 +231,41 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>4</sourceID>
+        <sourceID>14</sourceID>
         <destID>15</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
-        <actionLabel preferPathMark="false" minTraversals="1" maxTraversals="1">
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
             <uniqueID>15</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>ed5fe517-cb9b-9807-584a-1627c657c0dc</transaction_id><Selection><value>igk9l</value></Selection><Action><value>UpdateTextField</value></Action><Input><value><![CDATA[172.16.0.0/8]]></value></Input></properties></message>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>d0d26bec-2102-b33e-2780-89cbad9770c0</transaction_id><Selection><value>binaryRep</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ipiv3: 11000000.00010010.00000000.00000000]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
-            <hintMessage><![CDATA[Please enter "172.16.0.0/8" in the highlighted field.]]></hintMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
             <callbackFn></callbackFn>
-            <actionType>Buggy Action</actionType>
+            <actionType>Correct Action</actionType>
             <oldActionType>Correct Action</oldActionType>
             <checkedStatus>Never Checked</checkedStatus>
             <matchers Concatenation="true">
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[igk9l]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[binaryRep]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[UpdateTextField]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
                     </matcher>
                 </Action>
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[172.16.0.0/8]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[ipiv3: 11000000.00010010.00000000.00000000]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -709,8 +276,323 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>11</sourceID>
+        <sourceID>15</sourceID>
         <destID>16</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>16</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>4969cec4-37ff-6071-7949-41b15b1f5051</transaction_id><Selection><value>firstAssignable</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[isn1z: 172.0.0.1]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[firstAssignable]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[isn1z: 172.0.0.1]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>16</sourceID>
+        <destID>17</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>17</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>c4e9cf50-abe5-8f40-b8ec-f292373caaa7</transaction_id><Selection><value>isAssignable</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[iwtlj2: Yes]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[isAssignable]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[iwtlj2: Yes]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>17</sourceID>
+        <destID>18</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>18</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>37665d06-5df8-380b-a1f5-305fc9191096</transaction_id><Selection><value>notAssignable</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i9w6hj: 172.0.255.255 ]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[notAssignable]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[i9w6hj: 172.0.255.255 ]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>18</sourceID>
+        <destID>19</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>19</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7a9b1fe3-3d39-3cec-e52f-492021179013</transaction_id><Selection><value>subnetMask</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i6yvmq: 255.240.0.0]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[subnetMask]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[i6yvmq: 255.240.0.0]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>19</sourceID>
+        <destID>20</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>20</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>0062bf05-40b1-c3ba-f18c-9f439245689d</transaction_id><Selection><value>subnetPrefixLength</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i1e9t6: /18]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[subnetPrefixLength]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[i1e9t6: /18]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>20</sourceID>
+        <destID>21</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>21</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>80b5d7b0-eb60-f0fb-a869-5469c23c088d</transaction_id><Selection><value>defaultGateway</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ipxjok: 10.50.0.1]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[defaultGateway]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[UpdateRadioButton]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ipxjok: 10.50.0.1]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>21</sourceID>
+        <destID>22</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>22</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7a9941f8-3c80-b923-84fe-7ce702b86b60</transaction_id><Selection><value>done</value></Selection><Action><value>ButtonPressed</value></Action><Input><value><![CDATA[-1]]></value></Input></properties></message>
+            <buggyMessage></buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[done]]></matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[ButtonPressed]]></matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single"><![CDATA[-1]]></matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>unnamed</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>22</sourceID>
+        <destID>23</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="false">

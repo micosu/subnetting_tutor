@@ -4,6 +4,7 @@ global IPv4 = "192.168.64.0";
 global mask = "255.255.192.0"; // Prefix /18
 global verification1 = "192.168.63.2";
 global verification2 = "192.168.80.200";
+// Whether students receive subnet mask (instead of prefix length)
 global subnet = true;
 
 global problem_statement = `Your company, DataNest Solutions, is setting up an internal network for a new branch office. 
@@ -12,10 +13,7 @@ global network_map_diagram = "../HTML/Assets/networkmap2.png";
 global task_1_statement = `Based on the given network configuration of ${IPv4}\u003B 
 Subnet Mask: ${mask}`;
 
-// global v1 = " False";
-// global v2 = " False";
-
-global thedefaultGateway = "192.168.64.3";
+global thedefaultGateway = "192.168.64.1";
 global aimNumber = 200; // minimun # of IP
 
 global task_4_statement = `Find the first subnet within ${IPv4} that provides at least ${aimNumber} usable IP addresses. Write this subnet in CIDR notation.`;

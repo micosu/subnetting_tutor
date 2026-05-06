@@ -102,10 +102,10 @@ body {
 }
 
 #network_map {
-    width: 250px;
+    width: 450px;
     cursor: pointer;
     display: block;
-    margin: 20px auto;
+    margin: 10px 40px;
 }
 
 .networkMapDialogBox {

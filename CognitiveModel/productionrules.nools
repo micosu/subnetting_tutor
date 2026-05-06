@@ -19,7 +19,7 @@ rule bootstrap {
 
         // create facts to represent the student interface components
 
-        let Task1Statement = assert(new InterfaceElement("task_1_statement"));
+        let Task1Statement = assert(new InterfaceElement("task_1_ipv4"));
         let Task4Statement = assert(new InterfaceElement("cidr_notation_problem_statement"));
       
         let problemStatement = assert(new InterfaceElement("problem_statement"));
@@ -73,15 +73,19 @@ rule bootstrap {
 
         // write the numberToSquare to the proper student interface component
         assert(new TPA(problemStatement.name, "UpdateTextField", problem_statement));
-        assert(new TPA(Task1Statement.name, "UpdateTextField", task_1_statement));
+        
         assert(new TPA(Task4Statement.name, "UpdateTextField", task_4_statement));
         assert(new TPA(networkMap.name, "setImage", network_map_diagram));
         assert(new TPA(first_verification.name, "UpdateTextField", verification1));
         assert(new TPA(second_verification.name, "UpdateTextField", verification2));
 
         if (subnet) {
+          assert(new TPA(Task1Statement.name, "UpdateTextField", `${IPv4} <br>
+          Subnet Mask: ${mask}`));
           let subnet_row = document.getElementById("subnet_mask_row");
           subnet_row.style.display = "none";
+        } else {
+          assert(new TPA(Task1Statement.name, "UpdateTextField", IPv4));
         }
       
         var dialog;
@@ -145,9 +149,13 @@ rule findIPAddress {
     then {
         let ip = IPv4.split("/")[0];
         // let ip_binary = ip.split('.').map(octet => (+octet).toString(2).padStart(8, '0')).join('.');
-        assert(new Hint("The IP address is part of the given network configuration: " + IPv4));
-        assert(new Hint("Look at the value before the '/' in " + IPv4 + ". This is the network's IP address."));
-        assert(new Hint ("Please enter: " + ip));
+        // assert(new Hint("The IP address is part of the given network configuration: " + IPv4));
+        // assert(new Hint("Look at the value before the '/' in " + IPv4 + ". This is the network's IP address."));
+        // assert(new Hint ("Please enter: " + ip));
+        assert(new Hint("The network IP address is the first IP in an IP subnet"));
+        assert(new Hint ("Start by identifying the number of host bits (HINT: 32 - prefix length), and change all the host bits to 0 to get the network IP address"));
+        // assert(new Hint(`<img src='${networkIPImage}' style='object-fit: contain; width:420px; height:200px;'>`));
+        assert (new Hint ("Please enter: " + ip));
             // model observable action
 	      if (checkSAI({selection: sel, action: "UpdateTextField", input: ip})) {
              modify(prob, "IPaddressDecimal", ip); 
@@ -368,6 +376,10 @@ rule secondConvertIPToBinary {
     then {
         let ip = IPv4.split("/")[0];
         let ip_binary = ip.split('.').map(octet => (+octet).toString(2).padStart(8, '0')).join('.');
+        assert(new Hint(`Enter what you've found, in order, from Octet 1 to Octet 4, with a "." in between octet values.`));
+        assert(new Hint(`For Octet 1, you found that the binary conversion of "${ip.split('.')[0]}" is "${ip_binary.split('.')[0]}".
+                        Continue for the rest of the octets.`));
+        assert (new Hint (`Please enter: ${ip_binary}`));
             // model observable action
 	      if (checkSAI({selection: ipBinary2.name, action: "UpdateTextField", input: ip_binary})) {
           
@@ -523,7 +535,7 @@ rule findSubnetMask {
                   // hints
         assert(new Hint("The subnet mask is determined by the prefix length, showing which bits are for the network and which are for hosts."));
         assert(new Hint("With a prefix length of " + prefixLength + " write " + prefixLength + " ones, then fill the rest with zeros to make 32 bits."));
-        assert(new Hint(`<img src='${subnetMaskImage}' style='object-fit: contain; width:420px; height:200px;'>`));
+        // assert(new Hint(`<img src='${subnetMaskImage}' style='object-fit: contain; width:420px; height:200px;'>`));
         assert(new Hint ("Please enter: " + subnetMaskBinary));
       
             // model observable action
@@ -544,95 +556,137 @@ rule findSubnetMask {
 // ************************************************************
 
 
-rule findFirstOrNetworkIP {
-    when {
-        prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary == null
-        {IPaddressDecimal: ipd, prefixLength: pL, iefirstOrNetworkIPBinary: sel};
-        ie : InterfaceElement ie.name == sel && ie.value == null;
-        findFirstOrNetworkIPDecimal: InterfaceElement findFirstOrNetworkIPDecimal.name == "network_ip_TPA_decimal";
-    }
-    then {
-          let firstOrNetworkIP = ipd.split(".").map((part, i) =>
-              (parseInt(part, 10) & parseInt("1".repeat(pL).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2))
-                  .toString(2) // Convert the result to binary
-                  .padStart(8, "0") // Ensure 8-bit binary format
-          ).join(".");    
-          let firstOrNetworkIPdecimal = firstOrNetworkIP.split(".") .map(octet => parseInt(octet, 2)).join("."); 
+// rule findFirstOrNetworkIP {
+//     when {
+//         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
+//         && prob.firstOrNetworkIPBinary == null
+//         {IPaddressDecimal: ipd, prefixLength: pL, iefirstOrNetworkIPBinary: sel};
+//         ie : InterfaceElement ie.name == sel && ie.value == null;
+//         findFirstOrNetworkIPDecimal: InterfaceElement findFirstOrNetworkIPDecimal.name == "network_ip_TPA_decimal";
+//     }
+//     then {
+//           let firstOrNetworkIP = ipd.split(".").map((part, i) =>
+//               (parseInt(part, 10) & parseInt("1".repeat(pL).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2))
+//                   .toString(2) // Convert the result to binary
+//                   .padStart(8, "0") // Ensure 8-bit binary format
+//           ).join(".");    
+//           let firstOrNetworkIPdecimal = firstOrNetworkIP.split(".") .map(octet => parseInt(octet, 2)).join("."); 
 
-          // hints
-              assert(new Hint("The network IP address it the first IP in an IP subnet"));
-              assert(new Hint ("Start by identifying the number of host bits (HINT: 32 - prefix length), and change all the host bits to 0 to get the network IP address"));
-              assert(new Hint(`<img src='${networkIPImage}' style='object-fit: contain; width:420px; height:200px;'>`));
-              assert (new Hint ("Please enter: " + firstOrNetworkIP));
+//           // hints
+//               assert(new Hint("The network IP address it the first IP in an IP subnet"));
+//               assert(new Hint ("Start by identifying the number of host bits (HINT: 32 - prefix length), and change all the host bits to 0 to get the network IP address"));
+//               assert(new Hint(`<img src='${networkIPImage}' style='object-fit: contain; width:420px; height:200px;'>`));
+//               assert (new Hint ("Please enter: " + firstOrNetworkIP));
 
-        // model observable action
-        if (checkSAI({selection: sel, action: "UpdateTextField", input: firstOrNetworkIP})) {
-             modify(prob, "firstOrNetworkIPBinary", firstOrNetworkIP); 
-             modify(prob,"firstOrNetworkIPDecimal",firstOrNetworkIPdecimal);
-             modify(ie, "value", firstOrNetworkIP);    
-             modify(findFirstOrNetworkIPDecimal,"value",firstOrNetworkIPdecimal);
-          assert (new TPA("network_ip_TPA_decimal","UpdateTextField",firstOrNetworkIPdecimal));
-             halt();
-        }
-        else {
-            backtrack();
-        }
-    }
-}
+//         // model observable action
+//         if (checkSAI({selection: sel, action: "UpdateTextField", input: firstOrNetworkIP})) {
+//              modify(prob, "firstOrNetworkIPBinary", firstOrNetworkIP); 
+//              modify(prob,"firstOrNetworkIPDecimal",firstOrNetworkIPdecimal);
+//              modify(ie, "value", firstOrNetworkIP);    
+//              modify(findFirstOrNetworkIPDecimal,"value",firstOrNetworkIPdecimal);
+//           assert (new TPA("network_ip_TPA_decimal","UpdateTextField",firstOrNetworkIPdecimal));
+//              halt();
+//         }
+//         else {
+//             backtrack();
+//         }
+//     }
+// }
 
-rule buggy_1_findFirstOrNetworkIP {
-  // not entering binary
-    salience: -2; 
-    when {
-        prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary == null
-        {IPaddressDecimal: ipd, prefixLength: pL, iefirstOrNetworkIPBinary: sel};
-        ie : InterfaceElement ie.name == sel && ie.value == null;
-    }
-    then {
-          let firstOrNetworkIP = ipd.split(".").map((part, i) =>
-              (parseInt(part, 10) & parseInt("1".repeat(pL).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2))
-                  .toString(2) // Convert the result to binary
-                  .padStart(8, "0") // Ensure 8-bit binary format
-          ).join(".");    
-          let firstOrNetworkIPdecimal = firstOrNetworkIP.split(".") .map(octet => parseInt(octet, 2)).join("."); 
+// rule buggy_1_findFirstOrNetworkIP {
+//   // not entering binary
+//     salience: -2; 
+//     when {
+//         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
+//         && prob.firstOrNetworkIPBinary == null
+//         {IPaddressDecimal: ipd, prefixLength: pL, iefirstOrNetworkIPBinary: sel};
+//         ie : InterfaceElement ie.name == sel && ie.value == null;
+//     }
+//     then {
+//           let firstOrNetworkIP = ipd.split(".").map((part, i) =>
+//               (parseInt(part, 10) & parseInt("1".repeat(pL).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2))
+//                   .toString(2) // Convert the result to binary
+//                   .padStart(8, "0") // Ensure 8-bit binary format
+//           ).join(".");    
+//           let firstOrNetworkIPdecimal = firstOrNetworkIP.split(".") .map(octet => parseInt(octet, 2)).join("."); 
 
-    if(checkSAI({selection: sel, action: "UpdateTextField", input: firstOrNetworkIPdecimal},null,true)) {
-        setSuccessOrBugMsg("You're right, but make sure to enter the IP address in binary format here. It will be automatically converted to decimal form.");
-      }
-    backtrack();
-    }
-}
+//     if(checkSAI({selection: sel, action: "UpdateTextField", input: firstOrNetworkIPdecimal},null,true)) {
+//         setSuccessOrBugMsg("You're right, but make sure to enter the IP address in binary format here. It will be automatically converted to decimal form.");
+//       }
+//     backtrack();
+//     }
+// }
 
-rule buggy_2_findFirstOrNetworkIP {
-  // confused with subnetmask
-    salience: -2; 
-    when {
-        prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary == null
-        {IPaddressDecimal: ipd, prefixLength: pL, iefirstOrNetworkIPBinary: sel};
-        ie : InterfaceElement ie.name == sel && ie.value == null;
-    }
-    then {
-        let subnetMaskBinary = Array.from({ length: 4 }, (_, i) =>
-            parseInt("1".repeat(pL).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2).toString(2).padStart(8, "0")).join(".");
+// rule buggy_2_findFirstOrNetworkIP {
+//   // confused with subnetmask
+//     salience: -2; 
+//     when {
+//         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
+//         && prob.firstOrNetworkIPBinary == null
+//         {IPaddressDecimal: ipd, prefixLength: pL, iefirstOrNetworkIPBinary: sel};
+//         ie : InterfaceElement ie.name == sel && ie.value == null;
+//     }
+//     then {
+//         let subnetMaskBinary = Array.from({ length: 4 }, (_, i) =>
+//             parseInt("1".repeat(pL).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2).toString(2).padStart(8, "0")).join(".");
 
-    if(checkSAI({selection: sel, action: "UpdateTextField", input: subnetMaskBinary},null,true)) {
-        setSuccessOrBugMsg("Not quite! The first network IP address is NOT the same as the subnet mask. Focus on the starting IP of the network range.");
-      }
-    backtrack();
-    }
-}
+//     if(checkSAI({selection: sel, action: "UpdateTextField", input: subnetMaskBinary},null,true)) {
+//         setSuccessOrBugMsg("Not quite! The first network IP address is NOT the same as the subnet mask. Focus on the starting IP of the network range.");
+//       }
+//     backtrack();
+//     }
+// }
 
 // ************************************************************
 
+function buildBroadcastHTML(ip_binary, prefixLength) {
+  const addDots = b => b.slice(0,8)+"."+b.slice(8,16)+"."+b.slice(16,24)+"."+b.slice(24);
+  const raw = ip_binary.replace(/\./g, "");
+  const hostBits = 32 - prefixLength;
+  const broadcastRaw = raw.slice(0, prefixLength) + "1".repeat(hostBits);
+  const topStr = addDots(raw);
+  const botStr = addDots(broadcastRaw);
 
+  function findCutAt(dotted, prefix) {
+    let bits = 0;
+    for (let i = 0; i < dotted.length; i++) {
+      if (dotted[i] !== ".") bits++;
+      if (bits == prefix) return i + 1;
+    }
+  }
+
+  const cut = findCutAt(topStr, prefixLength);
+  const netStyle = "background:#C0DD97;color:#27500A;padding:2px 3px;border-radius:3px;";
+  const hostStyle = "background:#FAC775;color:#633806;padding:2px 3px;border-radius:3px;";
+  const labelStyle = "font-family:sans-serif;font-weight:500;font-size:14px;text-align:right;padding-right:8px;vertical-align:middle;";
+
+  return `<table style="border-collapse:collapse;font-family:monospace;">
+    <tr>
+      <td style="${labelStyle}" rowspan="2">IP Address<br><span style="font-weight:400;color:#D85A30;">(not subnet mask!)</span></td>
+      <td style="vertical-align:middle;padding:4px 0;">
+        <span style="${netStyle}">${topStr.slice(0, cut)}</span><span style="${hostStyle}">${topStr.slice(cut)}</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="font-family:sans-serif;font-size:12px;padding:4px 0 12px;">
+        <span style="color:#3B6D11;">${prefixLength} network bits</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color:#854F0B;">${hostBits} host bits</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="${labelStyle}">Last / Broadcast IP</td>
+      <td style="vertical-align:middle;padding:4px 0;">
+        <span style="${netStyle}">${botStr.slice(0, cut)}</span><span style="${hostStyle}">${botStr.slice(cut)}</span>
+      </td>
+    </tr>
+  </table>`;
+}
 rule findLastOrBroadcastIP {
     when {
         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary != null && prob.lastOrBroadcastIPBinary == null
-        {IPaddressDecimal: ipd, prefixLength: pL, ielastOrBroadcastIPBinary: sel};
+        && prob.IPaddressBinary != null && prob.lastOrBroadcastIPBinary == null
+        {IPaddressDecimal: ipd, prefixLength: pL, ielastOrBroadcastIPBinary: sel, IPaddressBinary: ipb};
          findLastOrBroadcastIPDecimal: InterfaceElement findLastOrBroadcastIPDecimal.name == "broadcast_ip_TPA_decimal";
 
         ie : InterfaceElement ie.name == sel && ie.value == null;
@@ -652,7 +706,8 @@ rule findLastOrBroadcastIP {
           // hints
               assert(new Hint("The broadcast IP address is the last IP address in the network range."));
               assert(new Hint ("Start by identifying the number of host bits (HINT: 32 - prefix length), and change all the host bits to 1 to get the broadcast IP address. "));
-              assert(new Hint(`<img src='${broadcastIPImage}' style='object-fit: contain; width:420px; height:200px;'>`));
+              assert(new Hint(`${buildBroadcastHTML(ipb, pL)}`));
+              // assert(new Hint(`<img src='${broadcastIPImage}' style='object-fit: contain; width:420px; height:200px;'>`));
               assert (new Hint ("Please enter: " + broadcastIP));
 
         // model observable action
@@ -675,7 +730,7 @@ rule buggy_1_findLastOrBroadcastIP {
     salience: -2; 
     when {
        prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary != null && prob.lastOrBroadcastIPBinary == null
+        && prob.lastOrBroadcastIPBinary == null
         {IPaddressDecimal: ipd, prefixLength: pL, ielastOrBroadcastIPBinary: sel};
          findLastOrBroadcastIPDecimal: InterfaceElement findLastOrBroadcastIPDecimal.name == "broadcast_ip_TPA_decimal";
         ie : InterfaceElement ie.name == sel && ie.value == null;
@@ -691,14 +746,42 @@ rule buggy_1_findLastOrBroadcastIP {
     }
 }
 
+rule buggy_2_findLastOrBroadcastIP {
+  // confused with subnetmask
+    salience: -2; 
+    when {
+       prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
+        && prob.lastOrBroadcastIPBinary == null
+        {IPaddressDecimal: ipd, prefixLength: pL, ielastOrBroadcastIPBinary: sel};
+         findLastOrBroadcastIPDecimal: InterfaceElement findLastOrBroadcastIPDecimal.name == "broadcast_ip_TPA_decimal";
+        ie : InterfaceElement ie.name == sel && ie.value == null;
+    }
+    then {
+      let broadcastIP = ipd.split(".").map((part, i) =>
+              (
+                  parseInt(part, 10) | // Perform bitwise OR
+                  (~parseInt("1".repeat(pL).padEnd(32, "0").slice(i * 8, i * 8 + 8), 2) & 0xFF)
+              )
+                  .toString(2) 
+                  .padStart(8, "0") 
+          ).join(".");  
+      let broadcastIPdecimal = broadcastIP.split(".") .map(octet => parseInt(octet, 2)).join(".");
+
+    if(checkSAI({selection: sel, action: "UpdateTextField", input: broadcastIPdecimal},null,true)) {
+        setSuccessOrBugMsg("This is the broadcast IP in decimal. Please enter the broadcast IP in binary here, and it will be converted to decimal for you!");
+      }
+    backtrack();
+    }
+}
+
 // ************************************************************
 
 
 rule findFirstUsableIP {
     when {
         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary != null && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP == null
-        {firstOrNetworkIPDecimal: networkip, iefirstUsableIP: sel};
+        && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP == null
+        {IPaddressDecimal: networkip, iefirstUsableIP: sel};
         ie : InterfaceElement ie.name == sel && ie.value == null;
     }
     then {   
@@ -724,8 +807,8 @@ rule buggy_1_findFirstUsableIP {
     salience: -2; 
     when {
         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary != null && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP == null
-        {firstOrNetworkIPDecimal: networkip, prefixLength: pL, iefirstUsableIP: sel};
+        && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP == null
+        {IPaddressDecimal: networkip, prefixLength: pL, iefirstUsableIP: sel};
         ie : InterfaceElement ie.name == sel && ie.value == null;
     }
     then {
@@ -742,7 +825,7 @@ rule buggy_1_findFirstUsableIP {
 rule findLastUsableIP {
     when {
         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary != null && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP != null &&
+        && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP != null &&
           prob.lastUsableIP == null
         {lastOrBroadcastIPDecimal: broadcastip, ielastUsableIP: sel};
         ie : InterfaceElement ie.name == sel && ie.value == null;
@@ -770,7 +853,7 @@ rule buggy_1_findLastUsableIP {
     salience: -2; 
     when {
         prob : Problem prob.IPaddressDecimal != null && prob.prefixLength != null && prob.subnetMaskBinary != null
-        && prob.firstOrNetworkIPBinary != null && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP != null &&
+        && prob.lastOrBroadcastIPBinary != null && prob.firstUsableIP != null &&
           prob.lastUsableIP == null
         {lastOrBroadcastIPDecimal: broadcastip, ielastUsableIP: sel};
         ie : InterfaceElement ie.name == sel && ie.value == null;
@@ -834,11 +917,17 @@ rule findDefaultGateway {
     }
     then {
         let dG = thedefaultGateway;
-        assert(new Hint("The default gateway is the device that allows traffic from your local network to reach other networks. Think of it as the network's exit point."));
-        assert(new Hint ("Look at the network map. Which device is responsible for letting traffic leave the internal network? Identify this exit point."));
-        assert(new Hint ("The exit point in this setup is the firewall. The default gateway is the IP address assigned to the internal-facing side of the firewall."));
-        assert(new Hint ("The default gateway IP is " + dG + " This IP is assigned to the internal side of the firewall, which acts as the exit point for the internal network. "));
-        assert(new Hint ("Please enter " + dG));
+        assert(new Hint("The default gateway is the device that allows traffic from your local network to reach destinations outside the network. Think of it as the network's exit point to the internet."));
+        assert(new Hint("Look at the network map. Which device is directly connected to the internet and allows traffic to leave the internal network?"));       
+        assert(new Hint("The device connected to the internet in this setup is the border router. The default gateway is the IP address assigned to this router on the internal network."));
+        assert(new Hint("The default gateway IP is " + dG + ". This IP belongs to the border router, which forwards traffic from the internal network to the internet."));
+        assert(new Hint("Please enter " + dG));
+        // 4/16/2026: Changed default gateway to be border router, not firewall
+        // assert(new Hint("The default gateway is the device that allows traffic from your local network to reach other networks. Think of it as the network's exit point."));
+        // assert(new Hint ("Look at the network map. Which device is responsible for letting traffic leave the internal network? Identify this exit point."));
+        // assert(new Hint ("The exit point in this setup is the firewall. The default gateway is the IP address assigned to the internal-facing side of the firewall."));
+        // assert(new Hint ("The default gateway IP is " + dG + " This IP is assigned to the internal side of the firewall, which acts as the exit point for the internal network. "));
+        // assert(new Hint ("Please enter " + dG));
 
             // model observable action
 	      if (checkSAI({selection: sel, action: "UpdateTextField", input: dG})) {

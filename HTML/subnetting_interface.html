@@ -14,6 +14,7 @@
         <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/nools.js"></script>
         <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/ctat.min.js"></script>
         <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/ctatloader.js"></script>
+        <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
       <link rel="stylesheet" href="https://cdn.ctat.cs.cmu.edu/releases/lab/guppy/guppy-default-osk.min.css">
   </head>
       <body>
@@ -35,10 +36,13 @@
 </div>
 <div id="isk4" class="flexcolumn">
    <span id="ikcm5"><b id="ii1ek">Task 1: Subnet Details</b></span>
-   <div id="task_1_statement" class="CTATTextArea"></div>
+   <div id="task_1_statement">
+  Please answer the following questions <b> in order</b>
+  based on the given network configuration of <span class="CTATTextField" id="task_1_ipv4"></span>
+  </div>
 <section id="ip_address_row" class="flexrow task-row">
    <div class="label-column">
-      <span class="input-label">IP Address:</span>
+      <span class="input-label">Network IP Address:</span>
    </div>
    <div class="input-main-column">
       <div id="ip_input_decimal" placeholder="enter decimal here..." class="CTATTextInput"></div>
@@ -49,7 +53,7 @@
 </section>
 <div id="binary_scaffolding">
    <div id="binary_scaffold_message">
-      That doesn't look quite right. Let's try converting to binary together.
+      That doesn't look quite right. Let's try converting to binary together.   
    </div>
 <div id="binary_scaffold_grid">
    <div id="octet_box_1" class="octet-box">
@@ -224,11 +228,11 @@
 </div>
 <div id="binary_scaffolding_answer">
    <div id="binary_scaffold_answer_message">
-      Now let's put it all together:
+      Now let's put it all together:   
    </div>
 <div class="flexrow task-row">
    <div class="label-column">
-      <span class="input-label">IP Address (binary):</span>
+      <span class="input-label">Network IP Address (binary):</span>
    </div>
 <div class="input-main-column">
    <div id="second_ip_TPA_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
@@ -254,17 +258,6 @@
 </div>
    <div class="input-secondary-column">
       <div id="subnet_mask_TPA_decimal" placeholder="decimal will autofill..." data-ctat-enabled="false" class="CTATTextInput"></div>
-</div>
-</section>
-<section id="network_ip_row" class="flexrow task-row">
-   <div class="label-column">
-      <span class="input-label">Network IP Address:</span>
-   </div>
-   <div class="input-main-column">
-      <div id="network_ip_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
-</div>
-   <div class="input-secondary-column">
-      <div id="network_ip_TPA_decimal" placeholder="decimal will autofill..." data-ctat-enabled="false" class="CTATTextInput"></div>
 </div>
 </section>
 <section id="broadcast_ip_row" class="flexrow task-row">
@@ -329,6 +322,74 @@
 </section>
 </div>
 </section>
+    <script>
+  const attachZoomToCTATPopup = () => {
+    const observer = new MutationObserver(() => {
+      const modalImage = document.querySelector("#networkMapImageHolder img");
+      if (modalImage && !modalImage.dataset.zoomInitialized) {
+        modalImage.dataset.zoomInitialized = "true";
+        const instructionText = document.querySelector(".networkMapDialogBox");
+        if (instructionText) {
+          instructionText.innerText = "You can zoom and drag the map. Use the 🔍 buttons to zoom in/out, and click to drag the image.";
+        }
+
+        const panzoom = Panzoom(modalImage, {
+          maxScale: 3,
+          minScale: 1,
+          contain: 'outside',
+        });
+
+        modalImage.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+
+        // Optional: Add a zoom cursor for better UX
+        modalImage.style.cursor = 'zoom-in';
+        modalImage.addEventListener('mousedown', () => {
+          modalImage.style.cursor = 'grab';
+        });
+        modalImage.addEventListener('mouseup', () => {
+          modalImage.style.cursor = 'zoom-in';
+        });
+
+        // --- Create Zoom Buttons ---
+        const buttonContainer = document.createElement('div');
+        buttonContainer.style.position = 'absolute';
+        buttonContainer.style.top = '10px';
+        buttonContainer.style.right = '10px';
+        buttonContainer.style.zIndex = '999';
+        buttonContainer.style.display = 'flex';
+        buttonContainer.style.flexDirection = 'column';
+        buttonContainer.style.gap = '5px';
+      
+        const zoomInBtn = document.createElement('button');
+        zoomInBtn.innerText = '🔍+';
+        zoomInBtn.style.padding = '5px';
+        zoomInBtn.style.fontSize = '18px';
+        zoomInBtn.style.borderRadius = '5px';
+      
+        const zoomOutBtn = document.createElement('button');
+        zoomOutBtn.innerText = '🔍−';
+        zoomOutBtn.style.padding = '5px';
+        zoomOutBtn.style.fontSize = '18px';
+        zoomOutBtn.style.borderRadius = '5px';
+      
+        zoomInBtn.addEventListener('click', () => panzoom.zoomIn());
+        zoomOutBtn.addEventListener('click', () => panzoom.zoomOut());
+      
+        buttonContainer.appendChild(zoomInBtn);
+        buttonContainer.appendChild(zoomOutBtn);
+      
+        modalImage.parentElement.style.position = 'relative'; // ensure it's positioned
+        modalImage.parentElement.appendChild(buttonContainer);
+      }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  };
+
+  window.addEventListener('load', attachZoomToCTATPopup);
+
+  
+</script>
       </body>
     </html>
   

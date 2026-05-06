@@ -13,90 +13,90 @@
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state2</text>
-        <uniqueID>2</uniqueID>
+        <text>state13</text>
+        <uniqueID>13</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>175</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state3</text>
-        <uniqueID>3</uniqueID>
+        <text>state14</text>
+        <uniqueID>14</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>325</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state4</text>
-        <uniqueID>4</uniqueID>
+        <text>state15</text>
+        <uniqueID>15</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>475</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state5</text>
-        <uniqueID>5</uniqueID>
+        <text>state16</text>
+        <uniqueID>16</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>625</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state6</text>
-        <uniqueID>6</uniqueID>
+        <text>state17</text>
+        <uniqueID>17</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>775</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state7</text>
-        <uniqueID>7</uniqueID>
+        <text>state18</text>
+        <uniqueID>18</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>925</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state8</text>
-        <uniqueID>8</uniqueID>
+        <text>state19</text>
+        <uniqueID>19</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>1075</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state9</text>
-        <uniqueID>9</uniqueID>
+        <text>state20</text>
+        <uniqueID>20</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>1225</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state10</text>
-        <uniqueID>10</uniqueID>
+        <text>state21</text>
+        <uniqueID>21</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>1375</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state11</text>
-        <uniqueID>11</uniqueID>
+        <text>state22</text>
+        <uniqueID>22</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>1525</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
-        <text>state12</text>
-        <uniqueID>12</uniqueID>
+        <text>state23</text>
+        <uniqueID>23</uniqueID>
         <dimension>
-            <x>217</x>
+            <x>317</x>
             <y>1675</y>
         </dimension>
     </node>
@@ -105,8 +105,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>1</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>1c93ecd7-7539-623d-16ee-2dff2f4d103b</transaction_id><Selection><value>rbRecoveryGoal</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[it31h: Resuming normal business operations without remnants of the incident]]></value></Input></properties></message>
+            <uniqueID>12</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>606c5890-bada-1eac-e6a4-04f0a8242277</transaction_id><Selection><value>networkIPAddress</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[q1o3: 192.18.0.0]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -118,7 +118,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbRecoveryGoal]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[networkIPAddress]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -130,7 +130,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[it31h: Resuming normal business operations without remnants of the incident]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[q1o3: 192.18.0.0]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -142,7 +142,7 @@
             <indicator>-1</indicator>
         </rule>
         <sourceID>1</sourceID>
-        <destID>2</destID>
+        <destID>13</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -150,8 +150,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>2</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>f4e99107-0adb-d813-730d-acd513127c27</transaction_id><Selection><value>rbDetection</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ilif1: The detection phase employs a combination of automated monitoring tools and human expertise to spot anomalies or suspicious activities.]]></value></Input></properties></message>
+            <uniqueID>13</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>f73f66f9-f63c-c163-79b2-a36e2c5c2aa2</transaction_id><Selection><value>prefixLength</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ilif1: /16]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -163,7 +163,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbDetection]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[prefixLength]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -175,7 +175,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ilif1: The detection phase employs a combination of automated monitoring tools and human expertise to spot anomalies or suspicious activities.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[ilif1: /16]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -186,8 +186,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>2</sourceID>
-        <destID>3</destID>
+        <sourceID>13</sourceID>
+        <destID>14</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -195,8 +195,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>3</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>73e85a17-20f1-82aa-bab8-a7ec5664e4f6</transaction_id><Selection><value>rbDDoSMechanism</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ilfsd: Overwhelms the system with traffic, rendering it unresponsive.]]></value></Input></properties></message>
+            <uniqueID>14</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>eefc29bf-e4b7-bd7e-1786-43471de22cb6</transaction_id><Selection><value>broadcastAddress</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i5lsu: 192.18.255.255]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -208,7 +208,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbDDoSMechanism]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[broadcastAddress]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -220,7 +220,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ilfsd: Overwhelms the system with traffic, rendering it unresponsive.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[i5lsu: 192.18.255.255]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -231,8 +231,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>3</sourceID>
-        <destID>4</destID>
+        <sourceID>14</sourceID>
+        <destID>15</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -240,8 +240,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>4</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>99032850-d9f4-b01e-4325-90a9fe65ff18</transaction_id><Selection><value>rbDDoSIndicator</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ifq0v: A sudden spike in network traffic overwhelming system resources.]]></value></Input></properties></message>
+            <uniqueID>15</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>d0d26bec-2102-b33e-2780-89cbad9770c0</transaction_id><Selection><value>binaryRep</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ipiv3: 11000000.00010010.00000000.00000000]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -253,7 +253,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbDDoSIndicator]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[binaryRep]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -265,7 +265,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ifq0v: A sudden spike in network traffic overwhelming system resources.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[ipiv3: 11000000.00010010.00000000.00000000]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -276,8 +276,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>4</sourceID>
-        <destID>5</destID>
+        <sourceID>15</sourceID>
+        <destID>16</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -285,8 +285,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>5</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>0c4b3677-33e0-ce6e-6f80-586ee35928e9</transaction_id><Selection><value>rbDDoSMitigation</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i32lv: Enabling rate limiting to stop excessive traffic from attackers.]]></value></Input></properties></message>
+            <uniqueID>16</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>4969cec4-37ff-6071-7949-41b15b1f5051</transaction_id><Selection><value>firstAssignable</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[isn1z: 172.0.0.1]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -298,7 +298,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbDDoSMitigation]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[firstAssignable]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -310,7 +310,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[i32lv: Enabling rate limiting to stop excessive traffic from attackers.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[isn1z: 172.0.0.1]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -321,8 +321,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>5</sourceID>
-        <destID>6</destID>
+        <sourceID>16</sourceID>
+        <destID>17</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -330,8 +330,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>6</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7f9c9533-4f69-c7f3-22de-2a818abefcd7</transaction_id><Selection><value>rbMonitoring</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i9ie2p: Observing and analyzing system activities for potential security incidents]]></value></Input></properties></message>
+            <uniqueID>17</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>c4e9cf50-abe5-8f40-b8ec-f292373caaa7</transaction_id><Selection><value>isAssignable</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[iwtlj2: Yes]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -343,7 +343,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbMonitoring]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[isAssignable]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -355,7 +355,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[i9ie2p: Observing and analyzing system activities for potential security incidents]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[iwtlj2: Yes]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -366,8 +366,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>6</sourceID>
-        <destID>7</destID>
+        <sourceID>17</sourceID>
+        <destID>18</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -375,8 +375,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>7</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>2eba8868-798b-a708-be19-ad11e827c729</transaction_id><Selection><value>rbResourceProvisionImpact</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ij53yp: Reduce CPU/memory utilization without directly affecting incoming traffic volume.]]></value></Input></properties></message>
+            <uniqueID>18</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>37665d06-5df8-380b-a1f5-305fc9191096</transaction_id><Selection><value>notAssignable</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i9w6hj: 172.0.255.255 ]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -388,7 +388,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbResourceProvisionImpact]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[notAssignable]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -400,7 +400,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ij53yp: Reduce CPU/memory utilization without directly affecting incoming traffic volume.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[i9w6hj: 172.0.255.255 ]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -411,8 +411,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>7</sourceID>
-        <destID>8</destID>
+        <sourceID>18</sourceID>
+        <destID>19</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -420,8 +420,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>8</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>40c6cd9a-a4f6-e520-3e2e-9aa1bda142fd</transaction_id><Selection><value>rbRateLimitingImpact</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[io21uz: Traffic decreases, and CPU/memory utilization decreases.]]></value></Input></properties></message>
+            <uniqueID>19</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7a9b1fe3-3d39-3cec-e52f-492021179013</transaction_id><Selection><value>subnetMask</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i6yvmq: 255.240.0.0]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -433,7 +433,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbRateLimitingImpact]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[subnetMask]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -445,7 +445,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[io21uz: Traffic decreases, and CPU/memory utilization decreases.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[i6yvmq: 255.240.0.0]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -456,8 +456,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>8</sourceID>
-        <destID>9</destID>
+        <sourceID>19</sourceID>
+        <destID>20</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -465,8 +465,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>9</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>82c81356-ff79-ee42-3581-c0ab5398a1ae</transaction_id><Selection><value>rbResourceRemovalCostImpact</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ilu3a6: Cost decreases because fewer resources are being used.]]></value></Input></properties></message>
+            <uniqueID>20</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>0062bf05-40b1-c3ba-f18c-9f439245689d</transaction_id><Selection><value>subnetPrefixLength</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[i1e9t6: /18]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -478,7 +478,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbResourceRemovalCostImpact]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[subnetPrefixLength]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -490,7 +490,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[ilu3a6: Cost decreases because fewer resources are being used.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[i1e9t6: /18]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -501,8 +501,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>9</sourceID>
-        <destID>10</destID>
+        <sourceID>20</sourceID>
+        <destID>21</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -510,8 +510,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>10</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>147b6a19-4985-b060-f823-eea8256a16f3</transaction_id><Selection><value>rbResourceRemovalTrafficUtilizationImpact</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[iwyxwi: Traffic stays the same, and CPU/memory utilization increases.]]></value></Input></properties></message>
+            <uniqueID>21</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>80b5d7b0-eb60-f0fb-a869-5469c23c088d</transaction_id><Selection><value>defaultGateway</value></Selection><Action><value>UpdateRadioButton</value></Action><Input><value><![CDATA[ipxjok: 10.50.0.1]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -523,7 +523,7 @@
                 <Selection>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[rbResourceRemovalTrafficUtilizationImpact]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[defaultGateway]]></matcherParameter>
                     </matcher>
                 </Selection>
                 <Action>
@@ -535,7 +535,7 @@
                 <Input>
                     <matcher>
                         <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single"><![CDATA[iwyxwi: Traffic stays the same, and CPU/memory utilization increases.]]></matcherParameter>
+                        <matcherParameter name="single"><![CDATA[ipxjok: 10.50.0.1]]></matcherParameter>
                     </matcher>
                 </Input>
                 <Actor linkTriggered="false">Student</Actor>
@@ -546,8 +546,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>10</sourceID>
-        <destID>11</destID>
+        <sourceID>21</sourceID>
+        <destID>22</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -555,8 +555,8 @@
             <studentHintRequest></studentHintRequest>
             <stepSuccessfulCompletion></stepSuccessfulCompletion>
             <stepStudentError></stepStudentError>
-            <uniqueID>11</uniqueID>
-            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>993649b7-4e4c-7d93-8fea-5f64a2cd04be</transaction_id><Selection><value>done</value></Selection><Action><value>ButtonPressed</value></Action><Input><value><![CDATA[-1]]></value></Input></properties></message>
+            <uniqueID>22</uniqueID>
+            <message><verb>NotePropertySet</verb><properties><MessageType>InterfaceAction</MessageType><transaction_id>7a9941f8-3c80-b923-84fe-7ce702b86b60</transaction_id><Selection><value>done</value></Selection><Action><value>ButtonPressed</value></Action><Input><value><![CDATA[-1]]></value></Input></properties></message>
             <buggyMessage></buggyMessage>
             <successMessage></successMessage>
             <hintMessage><![CDATA[Please click the highlighted button.]]></hintMessage>
@@ -591,8 +591,8 @@
             <text>unnamed</text>
             <indicator>-1</indicator>
         </rule>
-        <sourceID>11</sourceID>
-        <destID>12</destID>
+        <sourceID>22</sourceID>
+        <destID>23</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <EdgesGroups ordered="false">

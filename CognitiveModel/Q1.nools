@@ -3,17 +3,16 @@ import("productionrules.nools");
 global IPv4="172.16.0.0/12";
 global verification1 = "172.17.0.1";
 global verification2 = "172.31.255.255";
+// Whether students receive subnet mask (instead of prefix length)
 global subnet = false;
 
 global problem_statement = `Your company TechHorizon Inc. has expanded to a new floor, adding numerous workstations and IoT devices to the internal network. 
 As part of the IT team, your task is to ensure the expanded network, using subnet ${IPv4}, is correctly configured`;
 global network_map_diagram = "../HTML/Assets/networkmap1.png";
-global task_1_statement = `Based on the given network configuration of ${IPv4}`;
+global task_1_statement = `Please answer the following questions <b> in order </b>
+based on the given network configuration of ${IPv4}`;
 
-global v1 = " True";
-global v2 = " False";
-
-global thedefaultGateway = "172.16.0.3";
+global thedefaultGateway = "172.16.0.1";
 global aimNumber = 200; // minimun # of IP
 
 global broadcastIPImage = "../HTML/Assets/P1_Broadcast.png";

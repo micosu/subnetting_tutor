@@ -4,6 +4,7 @@ global IPv4="172.20.0.0";
 global mask="255.254.0.0";
 global verification1 = "172.21.0.25";
 global verification2 = "172.22.255.255";
+// Whether students receive subnet mask (instead of prefix length)
 global subnet = true;
 
 global problem_statement = `A healthcare provider, MedServe Health, has set up a new server network for patient records, which is configured as ${IPv4}. 
@@ -12,10 +13,7 @@ global network_map_diagram = "../HTML/Assets/networkmap4.png";
 global task_1_statement = `Based on the given network configuration of ${IPv4}\u003B 
 Subnet Mask: ${mask}`;
 
-global v1 = " True";
-global v2 = " False";
-
-global thedefaultGateway = "172.20.0.3";
+global thedefaultGateway = "172.20.0.1";
 global aimNumber = 1000; // minimun # of IP
 
 
