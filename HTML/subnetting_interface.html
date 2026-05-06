@@ -14,6 +14,7 @@
         <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/nools.js"></script>
         <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/ctat.min.js"></script>
         <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/ctatloader.js"></script>
+        <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
       <link rel="stylesheet" href="https://cdn.ctat.cs.cmu.edu/releases/lab/guppy/guppy-default-osk.min.css">
   </head>
       <body>
@@ -35,24 +36,216 @@
 </div>
 <div id="isk4" class="flexcolumn">
    <span id="ikcm5"><b id="ii1ek">Task 1: Subnet Details</b></span>
-   <div id="task_1_statement" class="CTATTextArea"></div>
+   <div id="task_1_statement">
+  Please answer the following questions <b> in order</b>
+  based on the given network configuration of <span class="CTATTextField" id="task_1_ipv4"></span>
+  </div>
 <section id="ip_address_row" class="flexrow task-row">
    <div class="label-column">
-      <span class="input-label">IP Address:</span>
+      <span class="input-label">Network IP Address:</span>
    </div>
    <div class="input-main-column">
       <div id="ip_input_decimal" placeholder="enter decimal here..." class="CTATTextInput"></div>
 </div>
    <div class="input-secondary-column">
-      <div id="ip_TPA_binary" placeholder="binary conversion (autofill)" data-ctat-enabled="false" class="CTATTextInput"></div>
+      <div id="ip_TPA_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
 </div>
 </section>
+<div id="binary_scaffolding">
+   <div id="binary_scaffold_message">
+      That doesn't look quite right. Let's try converting to binary together.   
+   </div>
+<div id="binary_scaffold_grid">
+   <div id="octet_box_1" class="octet-box">
+      <div class="octet-title">
+         Octet 1: <span id="octet_val_1" class="octet-value"></span>
+      </div>
+<div class="octet-instruction">
+   Fill in the binary representation:
+</div>
+<div class="octet-bit-row">
+   <div class="bit-column">
+      <span class="bit-label">128</span>
+      <div id="octet1_bit1" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">64</span>
+   <div id="octet1_bit2" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">32</span>
+   <div id="octet1_bit3" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">16</span>
+   <div id="octet1_bit4" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">8</span>
+   <div id="octet1_bit5" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">4</span>
+   <div id="octet1_bit6" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">2</span>
+   <div id="octet1_bit7" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">1</span>
+   <div id="octet1_bit8" class="CTATTextInput octet-bit-input"></div>
+</div>
+</div>
+</div>
+<div id="octet_box_2" class="octet-box">
+   <div class="octet-title">
+      Octet 2: <span id="octet_val_2" class="octet-value"></span>
+   </div>
+<div class="octet-instruction">
+   Fill in the binary representation:
+</div>
+<div class="octet-bit-row">
+   <div class="bit-column">
+      <span class="bit-label">128</span>
+      <div id="octet2_bit1" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">64</span>
+   <div id="octet2_bit2" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">32</span>
+   <div id="octet2_bit3" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">16</span>
+   <div id="octet2_bit4" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">8</span>
+   <div id="octet2_bit5" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">4</span>
+   <div id="octet2_bit6" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">2</span>
+   <div id="octet2_bit7" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">1</span>
+   <div id="octet2_bit8" class="CTATTextInput octet-bit-input"></div>
+</div>
+</div>
+</div>
+<div id="octet_box_3" class="octet-box">
+   <div class="octet-title">
+      Octet 3: <span id="octet_val_3" class="octet-value"></span>
+   </div>
+<div class="octet-instruction">
+   Fill in the binary representation:
+</div>
+<div class="octet-bit-row">
+   <div class="bit-column">
+      <span class="bit-label">128</span>
+      <div id="octet3_bit1" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">64</span>
+   <div id="octet3_bit2" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">32</span>
+   <div id="octet3_bit3" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">16</span>
+   <div id="octet3_bit4" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">8</span>
+   <div id="octet3_bit5" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">4</span>
+   <div id="octet3_bit6" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">2</span>
+   <div id="octet3_bit7" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">1</span>
+   <div id="octet3_bit8" class="CTATTextInput octet-bit-input"></div>
+</div>
+</div>
+</div>
+<div id="octet_box_4" class="octet-box">
+   <div class="octet-title">
+      Octet 4: <span id="octet_val_4" class="octet-value"></span>
+   </div>
+<div class="octet-instruction">
+   Fill in the binary representation:
+</div>
+<div class="octet-bit-row">
+   <div class="bit-column">
+      <span class="bit-label">128</span>
+      <div id="octet4_bit1" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">64</span>
+   <div id="octet4_bit2" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">32</span>
+   <div id="octet4_bit3" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">16</span>
+   <div id="octet4_bit4" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">8</span>
+   <div id="octet4_bit5" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">4</span>
+   <div id="octet4_bit6" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">2</span>
+   <div id="octet4_bit7" class="CTATTextInput octet-bit-input"></div>
+</div>
+<div class="bit-column">
+   <span class="bit-label">1</span>
+   <div id="octet4_bit8" class="CTATTextInput octet-bit-input"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="binary_scaffolding_answer">
+   <div id="binary_scaffold_answer_message">
+      Now let's put it all together:   
+   </div>
+<div class="flexrow task-row">
+   <div class="label-column">
+      <span class="input-label">Network IP Address (binary):</span>
+   </div>
+<div class="input-main-column">
+   <div id="second_ip_TPA_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
+</div>
+<div class="input-secondary-column"></div>
+</div>
+</div>
 <section id="prefix_row" class="flexrow task-row">
    <div class="label-column">
       <span class="input-label">Prefix Length:</span>
    </div>
    <div class="input-main-column">
-      <div id="prefix_length_input" placeholder="enter decimal here..." class="CTATTextInput"></div>
+      <div id="prefix_length_input" placeholder="enter prefix" class="CTATTextInput"></div>
 </div>
    <div class="input-secondary-column"></div>
 </section>
@@ -64,18 +257,7 @@
       <div id="subnet_mask_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
 </div>
    <div class="input-secondary-column">
-      <div id="subnet_mask_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
-</div>
-</section>
-<section id="network_ip_row" class="flexrow task-row">
-   <div class="label-column">
-      <span class="input-label">Network IP Address:</span>
-   </div>
-   <div class="input-main-column">
-      <div id="network_ip_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
-</div>
-   <div class="input-secondary-column">
-      <div id="network_ip_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
+      <div id="subnet_mask_TPA_decimal" placeholder="decimal will autofill..." data-ctat-enabled="false" class="CTATTextInput"></div>
 </div>
 </section>
 <section id="broadcast_ip_row" class="flexrow task-row">
@@ -86,12 +268,12 @@
       <div id="broadcast_ip_input_binary" placeholder="enter binary here..." class="CTATTextInput"></div>
 </div>
    <div class="input-secondary-column">
-      <div id="broadcast_ip_TPA_decimal" placeholder="decimal conversion" data-ctat-enabled="false" class="CTATTextInput"></div>
+      <div id="broadcast_ip_TPA_decimal" placeholder="decimal will autofill..." data-ctat-enabled="false" class="CTATTextInput"></div>
 </div>
 </section>
 <section id="range_row" class="flexrow task-row">
    <div class="label-column">
-      <span class="input-label">Usable IP address range:</span>
+      <span class="input-label">Assignable IP address range:</span>
    </div>
    <div class="range-container">
       <div id="first_usable_ip_input_binary" class="CTATTextInput"></div>
@@ -101,7 +283,7 @@
 </section>
 <span class="task-header"><b>Task 2: IP Address Verification</b></span>
 <div class="task-description">
-   During setup, you notice various devices with IP addresses that might not all be within the correct range. Verify if each of the following IP addresses is a usable address within this subnet:
+   During setup, you notice various devices with IP addresses that might not all be within the correct range. Verify if each of the following IP addresses is an assignable address within this subnet:
 </div>
 <section id="verification_1_row" class="flexrow task-row">
    <div class="label-column">
@@ -138,19 +320,76 @@
 </div>
    <div class="input-secondary-column"></div>
 </section>
-<span class="task-header"><b>Task 4: CIDR Notation</b></span>
-<div id="cidr_notation_problem_statement" class="CTATTextArea"></div>
-<section id="cidr_row" class="flexrow task-row">
-   <div class="label-column">
-      <span class="input-label">CIDR Notation:</span>
-   </div>
-   <div class="input-main-column">
-      <div id="igk9l" class="CTATTextInput"></div>
-</div>
-   <div class="input-secondary-column"></div>
-</section>
 </div>
 </section>
+    <script>
+  const attachZoomToCTATPopup = () => {
+    const observer = new MutationObserver(() => {
+      const modalImage = document.querySelector("#networkMapImageHolder img");
+      if (modalImage && !modalImage.dataset.zoomInitialized) {
+        modalImage.dataset.zoomInitialized = "true";
+        const instructionText = document.querySelector(".networkMapDialogBox");
+        if (instructionText) {
+          instructionText.innerText = "You can zoom and drag the map. Use the 🔍 buttons to zoom in/out, and click to drag the image.";
+        }
+
+        const panzoom = Panzoom(modalImage, {
+          maxScale: 3,
+          minScale: 1,
+          contain: 'outside',
+        });
+
+        modalImage.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+
+        // Optional: Add a zoom cursor for better UX
+        modalImage.style.cursor = 'zoom-in';
+        modalImage.addEventListener('mousedown', () => {
+          modalImage.style.cursor = 'grab';
+        });
+        modalImage.addEventListener('mouseup', () => {
+          modalImage.style.cursor = 'zoom-in';
+        });
+
+        // --- Create Zoom Buttons ---
+        const buttonContainer = document.createElement('div');
+        buttonContainer.style.position = 'absolute';
+        buttonContainer.style.top = '10px';
+        buttonContainer.style.right = '10px';
+        buttonContainer.style.zIndex = '999';
+        buttonContainer.style.display = 'flex';
+        buttonContainer.style.flexDirection = 'column';
+        buttonContainer.style.gap = '5px';
+      
+        const zoomInBtn = document.createElement('button');
+        zoomInBtn.innerText = '🔍+';
+        zoomInBtn.style.padding = '5px';
+        zoomInBtn.style.fontSize = '18px';
+        zoomInBtn.style.borderRadius = '5px';
+      
+        const zoomOutBtn = document.createElement('button');
+        zoomOutBtn.innerText = '🔍−';
+        zoomOutBtn.style.padding = '5px';
+        zoomOutBtn.style.fontSize = '18px';
+        zoomOutBtn.style.borderRadius = '5px';
+      
+        zoomInBtn.addEventListener('click', () => panzoom.zoomIn());
+        zoomOutBtn.addEventListener('click', () => panzoom.zoomOut());
+      
+        buttonContainer.appendChild(zoomInBtn);
+        buttonContainer.appendChild(zoomOutBtn);
+      
+        modalImage.parentElement.style.position = 'relative'; // ensure it's positioned
+        modalImage.parentElement.appendChild(buttonContainer);
+      }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  };
+
+  window.addEventListener('load', attachZoomToCTATPopup);
+
+  
+</script>
       </body>
     </html>
   
